@@ -1,5 +1,9 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
 }
 
