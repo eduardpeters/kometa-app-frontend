@@ -1,9 +1,10 @@
 import "../assets/styles/App.css";
+import SelectorUser from "./selector-user/SelectorUser";
 
 function App() {
     return (
         <div className="App">
-            <h1>Kometa App! &#x2604;&#xFE0F;</h1>
+            <SelectorUser />
         </div>
     );
 }
