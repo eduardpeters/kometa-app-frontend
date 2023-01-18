@@ -1,6 +1,7 @@
 import "../assets/styles/App.css";
 /* import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; */
 import Navbar from "./navbar/Navbar.jsx";
+import NewDelivery from "./new-delivery/NewDelivery.jsx";
 import Search from "./search/Search.jsx";
 import SelectorUser from "./selector-user/SelectorUser";
 
@@ -10,6 +11,7 @@ function App() {
             <Navbar />
             <SelectorUser />
             <Search />
+            <NewDelivery />
         </div>
     );
 }
