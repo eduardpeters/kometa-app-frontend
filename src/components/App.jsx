@@ -1,17 +1,11 @@
 import "../assets/styles/App.css";
+import NoOrder from "./no-order/NoOrder.jsx";
 /* import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; */
-import Navbar from "./navbar/Navbar.jsx";
-import NewDelivery from "./new-delivery/NewDelivery.jsx";
-import Search from "./search/Search.jsx";
-import SelectorUser from "./selector-user/SelectorUser";
 
 function App() {
     return (
         <div className="App">
-            <Navbar />
-            <SelectorUser />
-            <Search />
-            <NewDelivery />
+            <NoOrder />
         </div>
     );
 }
