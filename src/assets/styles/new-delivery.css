@@ -1,0 +1,48 @@
+.new-delivery {
+    position: absolute;
+    width: 1280px;
+    height: 750px;
+    left: 80px;
+    top: 220px;
+    background-color: white;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-crete-delivery {
+    text-align: center;
+    color: #848484;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.image-empty {
+    width: 319px;
+    height: 311px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.title-new-delivery{
+    color: #4062FF;
+    font-weight:bolder;
+}
+
+.btn-new-delivery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    width: 148px;
+    height: 46px;
+    background: #4062FF;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    margin-top: 16px;
+    font-weight: 500;
+}

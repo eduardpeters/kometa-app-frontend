@@ -1,7 +1,7 @@
 import React from 'react'
-import logo from './logo-kometa.png'
+import logo from '../../assets/Images/logo-kometa.png'
 import "../../assets/styles/navbar.css";
-import user from './user.png';
+import user from '../../assets/Images/user.png';
 
 const navbar = () => {
   return (
