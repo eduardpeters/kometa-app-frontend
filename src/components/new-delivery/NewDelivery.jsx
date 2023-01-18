@@ -1,6 +1,6 @@
 import React from 'react'
 import "../../assets/styles/new-delivery.css";
-import image from "./empty.png";
+import image from "../../assets/Images/empty.png";
 
 const NewDelivery = () => {
   return (
