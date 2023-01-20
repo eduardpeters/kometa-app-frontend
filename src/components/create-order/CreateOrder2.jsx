@@ -38,11 +38,11 @@ const CreateOrder2 = () => {
 
                     <div className='inputs1'>
 
-                        <div>
+                        {/* <div>
                             <h3 className='title-input'>Seleccionar Tarjeta</h3>
                             <div><FaCcVisa size='24px' color='blue' /></div>
                             <div><FaCcMastercard size='24px' color='red' /></div>
-                        </div>
+                        </div> */}
 
                         <div>
                             <h3 className='title-input'>Nombre Titular</h3>
