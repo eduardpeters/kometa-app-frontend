@@ -4,8 +4,8 @@ import Navbar from '../navbar/Navbar.jsx'
 import Search from '../search/Search.jsx'
 import SelectorUser from '../selector-user/SelectorUser.jsx'
 import { useState } from 'react';
-import BtnUpload from '../btn-upload/BtnUpload';
-import BtnNext from '../btn-next/BtnNext';
+import BtnUpload from '../buttons/BtnUpload';
+import BtnNext from '../buttons/BtnNext';
 import { MdOutlineFileUpload } from "react-icons/md";
 import { MdOutlineClose } from "react-icons/md";
 import { MdOutlineAdd } from "react-icons/md";

@@ -4,11 +4,11 @@ import Navbar from '../navbar/Navbar.jsx'
 import Search from '../search/Search.jsx'
 import SelectorUser from '../selector-user/SelectorUser.jsx'
 import { useState } from 'react';
-import BtnFinish from '../btn-finish/BtnFinish';
-import BtnBack from '../btn-back/BtnBack';
+import BtnFinish from '../buttons/BtnFinish';
+import BtnBack from '../buttons/BtnBack';
 import { MdOutlineClose } from "react-icons/md";
-import { FaCcVisa } from "react-icons/fa";
-import { FaCcMastercard } from "react-icons/fa";
+/* import { FaCcVisa } from "react-icons/fa";
+import { FaCcMastercard } from "react-icons/fa"; */
 import { useNavigate } from 'react-router-dom';
 
 const CreateOrder2 = () => {
@@ -22,7 +22,8 @@ const CreateOrder2 = () => {
 
     const navigateToNoOrder = () => {
         navigate('/');
-      };
+    };
+
 
     return (
         <div>

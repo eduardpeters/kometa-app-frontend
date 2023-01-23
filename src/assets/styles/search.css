@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     border-radius: 4px;
-    border: 0.5px solid gray;
+    border: 1px solid #DDDBDA;
     justify-content: space-around;
     right: 80px;
     top: 120px;
