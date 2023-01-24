@@ -8,8 +8,25 @@ import SmallCard3Items from '../small-cards/SmallCard3Items';
 import SmallCardDeliveryMan from '../small-cards/SmallCardDeliveryMan.jsx';
 import SmallCardPrice from '../small-cards/SmallCardPrice';
 import map from "../../assets/Images/map.jpg"
+import { MdOutlineClose } from "react-icons/md";
+import { MdOutlineCall } from "react-icons/md";
+import { MdOutlineChatBubbleOutline } from "react-icons/md";
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import BtnEstimatedHour from '../buttons/BtnEstimatedHour';
+import PopupCancelOrder from '../popup-cancel-order/PopupCancelOrder';
+import BtnCancelOrder from '../buttons/BtnCancelOrder';
 
 const DeliveryDetails = () => {
+
+    const[popup, setPopup] = useState(false);
+
+    const navigate = useNavigate();
+
+    const navigateToNoOrder = () => {
+        navigate('/');
+    };
+
     return (
         <div>
             <Navbar />
@@ -38,14 +55,18 @@ const DeliveryDetails = () => {
 
 
                 <div className='right-container-delivery-details'>
-                    <div>
-                        Botones esquina
+                    <div className='buttons-delivery-details'>
+                        <BtnCancelOrder popup={popup} setPopup={setPopup} />
+                        <MdOutlineChatBubbleOutline size='24px' color='#4062FF' />
+                        <MdOutlineCall size='24px' color='#4062FF' />
+                        <MdOutlineClose onClick={navigateToNoOrder} size='24px' color='#4062FF' />
                     </div>
-                    <div className='img-bg-map' style={{backgroundImage: `url(${map})`}}>
-                        Hora de Entrega
+                    <div className='img-bg-map' style={{ backgroundImage: `url(${map})` }}>
+                        <BtnEstimatedHour />
                     </div>
                 </div>
             </div>
+            {popup ? <PopupCancelOrder popup={popup} setPopup={setPopup}/> : null}
         </div>
     )
 }

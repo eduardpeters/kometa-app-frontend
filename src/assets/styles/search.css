@@ -26,4 +26,17 @@
     position: absolute;
     left: 40px;
     color: gray;
+    border: none;
+}
+
+.search-name:focus{
+    outline: none;
+}
+
+.search-name:active{
+    outline: none;
+}
+
+.search-name:hover{
+    outline: none;
 }
