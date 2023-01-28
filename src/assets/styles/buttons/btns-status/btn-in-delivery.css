@@ -1,0 +1,10 @@
+.btn-in-delivery{
+    width: 100px;
+    height: 32px;
+    background-color: #DA8E49;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+}

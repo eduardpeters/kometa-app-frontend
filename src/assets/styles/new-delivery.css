@@ -32,18 +32,16 @@
 }
 
 .btn-new-delivery {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 20px;
-    width: 148px;
-    height: 46px;
-    background: #4062FF;
-    border-radius: 50px;
-    color: white;
+    width: 150px;
+    height: 42px;
+    background-color: #4062FF;
+    border-radius: 8px;
     border: none;
-    margin-top: 16px;
+    color: white;
     font-weight: 500;
     font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
 }

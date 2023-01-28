@@ -1,9 +1,9 @@
 import "../assets/styles/App.css";
 import NoOrder from "./no-order/NoOrder.jsx";
-import { useState } from "react";
-import CreateOrder1 from "./create-order/CreateOrder1.jsx";
-import CreateOrder2 from "./create-order/CreateOrder2.jsx";
+import CreateOrder from "./create-order/CreateOrder.jsx";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import DeliveryDetails from "./delivery-details/DeliveryDetails";
+import HistoryUser from "./history-user/HistoryUser";
 
 function App() {
 
@@ -12,8 +12,9 @@ function App() {
             <Router>
                 <Routes>
                     <Route path="/" element={<NoOrder />} />
-                    <Route path="/CreateOrder1" element={<CreateOrder1 />} />
-                    <Route path="/CreateOrder2" element={<CreateOrder2 />} />
+                    <Route path="/create-order" element={<CreateOrder />} />
+                    <Route path="/delivery-details" element={<DeliveryDetails />} />
+                    <Route path="/history-user" element={<HistoryUser />} />
                 </Routes>
             </Router>
         </div>
@@ -21,7 +22,3 @@ function App() {
 }
 
 export default App;
-
-/* const [layer, setLayer] = useState(false)
-
-{layer ? <NoOrder /> : <CreateOrder />} */

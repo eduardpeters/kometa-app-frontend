@@ -8,8 +8,8 @@ const NewDelivery = () => {
   
   const navigate = useNavigate();
 
-  const navigateToCreateOrder1 = () => {
-      navigate('/CreateOrder1');
+  const navigateToCreateOrder = () => {
+      navigate('/create-order');
     };
 
   return (
@@ -18,7 +18,7 @@ const NewDelivery = () => {
       <img className='image-empty' src={image} alt="Logo" />
       <h4>Realiza ya tu pedido</h4>
       <p className='p-crete-delivery'>Recibe tu pedido sin moverte de tu casa, aprovecha el tiempo y nosotros nos ocupamos del resto.<br />Nunca antes te lo habían puesto tan fácil.</p>
-      <button className='btn-new-delivery' onClick={navigateToCreateOrder1}>Realizar Pedido</button>
+      <button className='btn-new-delivery' onClick={navigateToCreateOrder}>Realizar Pedido</button>
     </div>
   )
 }
