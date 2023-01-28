@@ -29,7 +29,7 @@ const CreateOrder = () => {
     const navigate = useNavigate();
 
     const navigateToNoOrder = () => {
-        navigate('/');
+        navigate('/no-order');
     };
 
     return (
