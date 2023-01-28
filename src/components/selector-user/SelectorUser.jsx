@@ -8,8 +8,7 @@ const SelectorUser = () => {
     return (
         <div className="selector-completed">
             <Link className='selector-name' to="/">Mi pedido</Link>
-            <div className="selector-name">Historial</div>
-
+            <Link className='selector-name' to="/history-user">Historial</Link>
         </div>
     )
 }

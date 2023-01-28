@@ -1,0 +1,49 @@
+.history-navbar-user {
+    width: 1216px;
+    height: 44px;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    padding: 4px 32px;
+    gap: 16px;
+
+    background: #FFFFFF;
+    border-radius: 16px;
+
+}
+
+.bg-history{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 220px;
+    left: 80px;
+}
+
+.title-navbar-h{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.h-navbar-order-number{
+    padding-left: 3.5rem;
+}
+
+.h-navbar-price{
+    padding-left: 2.5rem;
+}
+
+.h-navbar-destination{
+    padding-left: 7rem;
+}
+
+.h-navbar-status{
+    padding-left: 5.5rem;
+}
+
+.h-navbar-origin{
+    padding-left: 1rem;
+}

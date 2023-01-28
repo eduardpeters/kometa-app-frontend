@@ -7,7 +7,7 @@ const BtnNext = () => {
     const navigate = useNavigate();
 
     const navigateToNext = () => {
-        navigate('/CreateOrder2');
+        navigate('/create-order-2');
       };
 
     return (

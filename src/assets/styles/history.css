@@ -1,0 +1,20 @@
+.bg-component-history{
+    width: 1216px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 32px;
+    gap: 16px;
+
+    background: #FFFFFF;
+    border-radius: 16px;
+
+    margin-top: 8px;
+}
+
+.details-history{
+    color: gray;
+}

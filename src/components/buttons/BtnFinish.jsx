@@ -7,7 +7,7 @@ const BtnFinish = () => {
     const navigate = useNavigate();
 
     const navigateToDeliveryDetails = () => {
-        navigate('/DeliveryDetails');
+        navigate('/delivery-details');
     };
 
     return (

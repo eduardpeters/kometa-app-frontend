@@ -1,17 +1,11 @@
 import React from 'react'
 import "../../assets/styles/small-card/small-card.css";
-import price from '../../assets/Images/price.jpg'
+import InfoCardPrice from '../info-cards/InfoCardPrice';
 
 const SmallCardPrice = () => {
     return (
         <div className='small-card'>
-            <div className='items-small-card'>
-                    <img className='img-small-card' src={price} alt='Delivery man' />
-                <div className='info-small-card'>
-                    <h5 className='name-small-card'>Precio Total</h5>
-                    <h5 className='details-small-card'>9€</h5>
-                </div>
-            </div>
+            <InfoCardPrice />
         </div>
     )
 }

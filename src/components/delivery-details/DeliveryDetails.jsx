@@ -1,6 +1,5 @@
 import React from 'react'
 import "../../assets/styles/delivery-details.css";
-import BtnInDelivery from '../buttons/BtnInDelivery';
 import Navbar from '../navbar/Navbar.jsx'
 import Search from '../search/Search.jsx'
 import SelectorUser from '../selector-user/SelectorUser.jsx'
@@ -13,9 +12,10 @@ import { MdOutlineCall } from "react-icons/md";
 import { MdOutlineChatBubbleOutline } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import BtnEstimatedHour from '../buttons/BtnEstimatedHour';
+import BtnEstimatedHour from '../buttons/btns-status/BtnEstimatedHour';
 import PopupCancelOrder from '../popup-cancel-order/PopupCancelOrder';
 import BtnCancelOrder from '../buttons/BtnCancelOrder';
+import BtnInDeliveryStatus from '../buttons/btns-status/BtnInDeliveryStatus.jsx';
 
 const DeliveryDetails = () => {
 
@@ -37,7 +37,7 @@ const DeliveryDetails = () => {
                     <div>
                         <h1 className='title-delivery-details'>Detalles del Pedido</h1>
                         <h3 className='delivery-number'>#HYONU789UJ</h3>
-                        <BtnInDelivery />
+                        <BtnInDeliveryStatus />
                     </div>
                     <div className='title-box-delivery-details'>
                         <h1 className='subtitle-delivery-details'>Repartidor</h1>

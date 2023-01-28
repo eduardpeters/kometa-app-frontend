@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../assets/styles/buttons/btns-status/btn-estimated-hour.css";
+import "../../../assets/styles/buttons/btns-status/btn-estimated-hour.css";
 
 const BtnEstimatedHour = () => {
 

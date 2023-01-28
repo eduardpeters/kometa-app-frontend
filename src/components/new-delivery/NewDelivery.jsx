@@ -9,7 +9,7 @@ const NewDelivery = () => {
   const navigate = useNavigate();
 
   const navigateToCreateOrder1 = () => {
-      navigate('/CreateOrder1');
+      navigate('/create-order-1');
     };
 
   return (
