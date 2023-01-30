@@ -20,7 +20,7 @@ function Login() {
 
     return (
         <>
-            <section>
+            <section className="login">
                 <div class="contenedor">
                     <div class="contenedorImagen">
                         <img src={image} alt="" />
@@ -47,8 +47,8 @@ function Login() {
                                         <button className='btn-sesion'>Inicio de sesión</button>
                                     </div>
                                     {/* <Googlebtn /> */}
-                                    <div className="link-register">
-                                        <h4 className='subtitle-register' onClick={navigateToFormlogin}>¿No tienes cuenta? <b>Registrate</b></h4>
+                                    <div className="box-log-in">
+                                        <h4 className='subtitle-log-in' onClick={navigateToFormlogin}>¿No tienes cuenta? <b>Registrate</b></h4>
                                     </div>
                                 </div>
                             </div>

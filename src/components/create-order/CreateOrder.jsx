@@ -91,7 +91,7 @@ const CreateOrder = () => {
                         <MdOutlineClose onClick={navigateToNoOrder} size='24px' />
                     </div>
 
-                    <div className='inputs1'>
+                    <div className='inputs2'>
 
                         {/* <div>
                             <h3 className='title-input'>Seleccionar Tarjeta</h3>

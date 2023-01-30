@@ -1,7 +1,6 @@
-section {
+.login {
     width: 100vw;
     height: 100vh;
-
 }
 
 .contenedor {
@@ -149,12 +148,6 @@ section {
     color: #D1D1D1;   
 }
 
-.subtitle-formulary{
-    margin-bottom: 70px;
-    font-size: 15px;
-    font-weight: 10;
-}
-
 .init-title{
     margin-bottom: 10px;
     display: flex;
@@ -217,4 +210,16 @@ section {
 
 .navBarUno img {
     margin-right: 30px;
+}
+
+.subtitle-log-in{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.box-log-in{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
