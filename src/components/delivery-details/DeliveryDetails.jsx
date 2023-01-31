@@ -16,6 +16,7 @@ import BtnEstimatedHour from '../buttons/btns-status/BtnEstimatedHour';
 import PopupCancelOrder from '../popup-cancel-order/PopupCancelOrder';
 import BtnCancelOrder from '../buttons/BtnCancelOrder';
 import BtnInDeliveryStatus from '../buttons/btns-status/BtnInDeliveryStatus.jsx';
+import PopupFinish from '../popup-finish/PopupFinish';
 
 const DeliveryDetails = () => {
 
@@ -67,6 +68,7 @@ const DeliveryDetails = () => {
                 </div>
             </div>
             {popup ? <PopupCancelOrder popup={popup} setPopup={setPopup}/> : null}
+            {/* <PopupFinish /> */}
         </div>
     )
 }
