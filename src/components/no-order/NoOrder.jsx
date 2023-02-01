@@ -3,6 +3,7 @@ import NewDelivery from '../new-delivery/NewDelivery'
 import Navbar from '../navbar/Navbar.jsx'
 import Search from '../search/Search.jsx'
 import SelectorUser from '../selector-user/SelectorUser.jsx'
+import NewDeliveryDeliver from '../new-delivery/NewDeliveryDeliver'
 
 const NoOrder = () => {
     return (
@@ -11,6 +12,7 @@ const NoOrder = () => {
             <SelectorUser />
             <Search />
             <NewDelivery />
+            {/* <NewDeliveryDeliver /> */}
         </>
     )
 }
