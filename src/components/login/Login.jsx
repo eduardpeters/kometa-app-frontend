@@ -1,9 +1,9 @@
 import React from "react";
 import NavLogin from "../../components/nav-login/NavLogin.jsx";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../../assets/styles/login.css'
-import image from '../../assets/Images/repartidor.jpg'
+import image from '../../assets/Images/repartidorlogin.png'
 import Register from "../register/Register";
 // import Googlebtn from '../components/Googlebtn'
 
@@ -18,16 +18,18 @@ function Login() {
         navigate('/register');
     };
 
+
+
     return (
         <>
             <section className="login">
-                <div class="contenedor">
-                    <div class="contenedorImagen">
+                <div class="conteiner1">
+                    <div class="conteinerImg1">
                         <img src={image} alt="" />
                     </div>
-                    <div className="contenedorContenido">
+                    <div className="conteinerForm1">
                         <div className="navBarUno"><NavLogin /></div>
-                        <div class="contenedorFormulario" >
+                        <div class="conteinerForm1" >
                             <div className='init-title'>
                                 <h2 className='title-log-in'>Inicio de sesión</h2>
                                 <h4 className='subtitle-login'>Introduce tus datos para iniciar sesión</h4>

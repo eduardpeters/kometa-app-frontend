@@ -6,8 +6,10 @@
     /* background: yellow; */
 }
 
+
 .imgUser-repart{
-    margin-right: 75px;
+    margin-right: 60px;
+    margin-left: 60px;
 }
 
 .textdesing{
@@ -16,6 +18,27 @@
 
 .subTextdesing{
     font-size: 15px;
+    
+}
+
+.button-login2{
+    color: white;
+    font-size: medium;
+    font-weight: 500;
+    background-color: #4062FF;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    border: none; 
+    width: 150px;
+    margin-top: 30px;
+    cursor:pointer;
+}
+
+.btn-loginlanding{
+    width: 700px;
 }
 
 .containerText{
@@ -23,26 +46,314 @@
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: flexftext-start;
-    margin-left: 40px;
     /* margin-right: 100px; */
     /* background: blue; */
     flex-direction: column;
     font-size:medium;
-    margin-left: 70px;
+    margin-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 120px;
 }
 
-.textito3{
+.logo-navbarLanding{
+    margin-left: 30px;
+    
+}
+
+/* ImgDelivery */
+.imgUser-repar{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-bottom: 120px;
+}   
+
+/* PlaceOrder */
+
+.place-Constainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    height: 260px;
+    border-radius: 30px;
+    background-color: #4062FF;
+    margin-top: 90px;
+    margin-left: 150px;
+    margin-bottom: 90px;
+    align-items: center;
+}
+
+.btnlogin2{
+    bottom: 40px;
+    width: 200px;
+    height: 42px;
+    background-color:white;
+    border-radius: 8px;
+    border: none;
+    color: #4062FF;
+    font-weight: 500;
+    font-size: 14px; 
+    cursor:pointer;
+}
+
+.startContainer-left1{
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+
+/* Logo group - We Make Landing*/
+
+/* WeMakeLanding*/
+
+
+.title-wemake{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 10px;   
+}
+
+.contain-wemake{
+    margin-top: 50px;
+}
+
+.subtitle-wemake{
+    letter-spacing: 5px;
+}
+
+.subtitle-wemake2{
+    font-size: 50px;
+    line-height: 45%;
+}
+
+.contain-Icons{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 90px;
+    margin-left: 90px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33vw;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 05px;
+}
+
+.text-wemake3{
+    font-weight: 200;
     text-align: center;
 }
 
+.text-wemake2{
+    font-weight: 200;
+    text-align: center;
+}
+
+/* OpinionClient */
+
+.container-Opinion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.text-Opinion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 60px;
+    margin-left: 40px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.textclient{
+    letter-spacing: 5px;
+    font-size: 12pt;
+    font-weight: 50;
+}
+
+.title-opinions{
+    font-size: 50px;
+}
+
+.h6-opinion{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+    padding-right: 100px;
+    text-align: left;
+}
+
+.start-opinion{
+    margin-top: 30px;
+}
+
+.text-wemake3{
+
+}
+
+/* StartWork */
+.startConstainer{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 500px;
+    margin-left: 75px;
+    margin-top: 100px;
+    border-radius: 30px;
+    background-color: rgba(64, 98, 255, 0.1);
+}
+
+
+.subtitle-start-work{
+    letter-spacing: 5px;
+}
+
+.subtitle-start-work2{
+    font-size: 50px;
+    line-height: 120%;
+}
+
+.button-start-order{
+    color: white;
+    font-weight: 500;
+    background-color: #4062FF;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    border: none; 
+    width: 150px;
+    margin-top: 30px;
+    cursor:pointer;
+}
+
+.startContainer-left{
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Work Kometa */
+.conteiner-work{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 600px;
+    margin-left: 60px;
+    margin-right: 190px;
+    margin-top: 60px;
+    border-radius: 30px;
+    padding: 40px;
+}
+
+.containerWork-right{
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.containerWork-text{
+    margin-bottom: 30px;
+}
+
+.subtitle-workLandin3{
+    font-size: 50px;
+    line-height: 120%;
+}
+
+.subtitle-workLandin{
+    letter-spacing: 5px;
+}
+
+.button-work{
+    color: white;
+    font-size: medium;
+    font-weight: 500;
+    background-color: #4062FF;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    border: none; 
+    width: 180px;
+    margin-top: 30px;
+    cursor:pointer;
+}
+
+/* Footer */
+
+
+.logs-Kometa{
+    margin-left: 30px;
+}
+
+.term-Cond{
+    font-size: xx-small;
+    color: gray;
+    margin-right: 30px;
+    margin-left: 30px;
+    line-height: 1%;
+}
+
+.redes-Kometa{
+    margin-left: 85px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.textito3{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+}
+
 .containerIzquierdo {
-    /* background: red; */
     display: flex;
     margin-right: 60px;
 }
 
 .containerBtn {
-    /* background: green; */
     display: flex;
 }
 
@@ -51,13 +362,10 @@
 }
 
 
-.containerPedidos {
-    /* background: purple; */
-    margin-right: 150px;
+.conteinerOrders {
+    margin-left: 60px;
 }
 
-
-/*NavbarLandin*/
 
 .navbarLandin{
     display: flex;
@@ -76,23 +384,14 @@
     border-radius: 10px;
 }
 
-/*Imagen repartidor landin*/
 
-.imgUser-repar{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+
+.subtitle-Landin2{
+    font-size: 50px;
+    line-height: 45%;
 }
 
-/* Comp. Landin*/
-.subtitle-Landin{
-    letter-spacing: 5px;
-    margin-bottom: 10px;
-}
 
-/* Logo Group*/
 
 .GroupLogs{
     width: 100vw;
@@ -102,159 +401,19 @@
     margin-bottom: 10vw;
 }
 
-/* Landin Opinion*/
 
-.title-Landin{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; 
-    margin-top: 10px;   
-}
-
-.contain_Landin{
-    margin-top: 50px;
-}
-.contain-Icons{
-    display: flex;
-    justify-content: space-between;
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-
-.description{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 05px;
-}
-
-.box1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 33vw;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-/* Landin Opinion */
-
-.container-Opinion{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-}
-
-.text-Opinion{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+.containerImg{
     margin-right: 60px;
-    margin-left: 40px;
-    padding-right: 100px;
 }
 
-/* .textito2{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-} */
 
-.textito2{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.start{
-    margin-top: 30px;
-}
-
-/* OPINIONS */
-
-.textclient{
-    /* font: 12pt Verdana, Arial, Helvetica, sans-serif;    */
-    letter-spacing: 5px;
-}
-
-/* Landing Start*/
-
-.startText{
-    display: flex;
-    flex-direction: column;  
-    width: 40vw;
-    height: 70vw;
-    margin-top: 115px;
-    margin-left: 70px;
-    padding: 30px;
-}
-
-.startContainer-left{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-    }
-    
-
-.startConstainer{
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    height: 500px;
-    margin-left: 60px;
-    margin-right: 190px;
-    margin-top: 100px;
-    border-radius: 30px;
-    background-color: rgba(64, 98, 255, 0.1);
-}
-
-.startBtn{
-    display: flex;
-    margin-left: 100px;
-    margin-bottom: 180px;
-}
-
-.motoman{
-    margin-bottom: 40px;
-}
-
-.container-work{
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    height: 600px;
-    margin-left: 60px;
-    margin-right: 190px;
-    margin-top: 60px;
-    border-radius: 30px;
-    padding: 40px;
-}
-
-/* Landing Work*/
-
-.containerWork-right{
-    display: flex;
-    align-items:flex-start;
-    margin-top: 20px;
-    padding: 30px;
-}
-
-.containerWork-right{
-    display: flex;
-    flex-direction: column;
-}
-
-.containerWork-text{
-    margin-bottom: 30px;
-}
-
-/* Footer*/
 
 .container-Footer{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
 }
 
 .containerFooter-left{
@@ -268,103 +427,130 @@
     margin-right: 60px;
 }
 
-
-.container-Footer{
+.text-wemake2{
+    align-items: center;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    
+    justify-content: center;
 }
 
+.text-wemake{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
 
 .motoman2{
     margin-bottom: 20px;
 }
 
 
-/* Place Order */
 
-.startConstainer2{
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    height: 260px;
-    border-radius: 30px;
-    background-color: #4062FF;
-}
 
-.startBtn2{
-    display: flex;
-    margin-left: 100px;
-    margin-bottom: 180px;
-}
 
-.container-work2{
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    height: 600px;
-    margin-left: 60px;
-    margin-right: 190px;
-    margin-top: 60px;
-    border-radius: 30px;
-    padding: 40px;
-}
 
-.subtitle-Place{
-    letter-spacing: 5px;
-    margin-bottom: 10px;
-}
 
-.startBtn2{
-    display: flex;
-    margin-left: 100px;
-    margin-bottom: 180px;
-}
 
-.btn-box2{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 350px;
-    margin-left: 50px;
-    border-radius: 8px;   
-} 
 
-.btnlogin2{
-    bottom: 40px;
-    width: 200px;
-    height: 42px;
-    background-color:white;
-    border-radius: 8px;
-    border: none;
-    color: #4062FF;
-    font-weight: 500;
-    font-size: 14px; 
-}
+/* 
 
-.motogirl{
-    vertical-align: middle;
-    margin-top: 35px;
-    margin-right: 30px;
-}
 
-.startText2{
+
+.startText{
     display: flex;
     flex-direction: column;  
     width: 40vw;
     height: 70vw;
-    margin-top: 280px;
-    margin-left: 20px;
+    margin-top: 115px;
+    margin-left: 70px;
     padding: 30px;
 }
 
-.term-Cond{
-    font-size: xx-small;
-    color: gray;
-    margin-right: 30px;
-    margin-left: 30px;
+
+
+.btn-login2{
+    color: white;
+    font-weight: 600;
+    background-color: #4062FF;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    border: none; 
+    width: 150px;
 }
+
+.button-login2{
+    color: white;
+    font-size: medium;
+    font-weight: 600;
+    background-color: #4062FF;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    border: none; 
+    width: 150px;
+    margin-top: 30px;
+}
+
+.button-Box {
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    background-color: #4062FF;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    border: none; 
+    width: 200px;
+    display: inline-block; 
+    margin-bottom: 130px;
+    margin-left: 90px;
+}
+
+.subTextdesing{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 50px;
+    line-height: 115%;
+}
+
+
+
+.startBtn{
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 180px;
+}
+
+.motoman{
+    margin-bottom: 40px;
+}
+
+
+
+
+
+.startBtn2{
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 180px;
+}
+
+
+.startBtn2{
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 180px;
+}
+
+
+
 
 .logs-Kometa{
     margin-left: 30px;
@@ -373,4 +559,4 @@
 
 .redes-K{
     margin-left: 60px;
-}
+} */

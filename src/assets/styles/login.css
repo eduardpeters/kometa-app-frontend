@@ -3,7 +3,7 @@
     height: 100vh;
 }
 
-.contenedor {
+.conteiner1 {
     background: white;
     width: 100%;
     height: 100%;
@@ -11,13 +11,13 @@
 
 }
 
-.contenedorImagen {
+.conteinerImg1 {
     position: relative;
     width: 50%;
     height: 100%;
 }
 
-.contenedorImagen img {
+.conteinerImg1 img {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,7 +26,7 @@
     object-fit: cover;
 }
 
-.contenedorContenido {
+.conteinerContent1 {
     position: relative;
     display: flex;
     width: 50%;
@@ -35,7 +35,7 @@
     flex-direction: column;
 }
 
-.contenedorFormulario {
+.conteinerForm1 {
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -43,12 +43,6 @@
     align-items: center; 
 }
 
-/* .contenedorContenido {
-    color: black;
-    font-weight: 500;
-    font-size: 2.6em;
-    display: inline-block;
-} */
 
 .inputs span {
     font-size: 1em;
@@ -103,27 +97,24 @@
     section {
         padding: 10px;
     }
-    .contenedorImagen {
+    .conteinerImg1 {
         position: absolute;
         width: 100%;
         top: 0;
         left: 0;
         height: 100%;
     }
-    .contenedorContenido{
+    .conteinerContent1{
         width: 100%;
         height: 100%;
         z-index: 3;
     }
-    .contenedorFormulario {
+    .conteinerForm1 {
         width: 100%;
         padding: 25px;
         background: rgba(255, 255, 255, .9);
     }
 }
-
-
-/*NEW CSS */
 
 .title-login{
     font-size: 20px;
@@ -131,7 +122,6 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-
 }
 
 .title-log-in{

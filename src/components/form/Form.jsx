@@ -2,9 +2,10 @@ import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import NavLogin from '../../components/nav-login/NavLogin';
-import image from '../../assets/Images/repartidor.jpg'
+import image from '../../assets/Images/repartidorlogin.png'
 import Register from '../../components/register/Register';
 import '../../assets/styles/form.css'
+
 
 export default function Formulary() {
 
@@ -22,16 +23,16 @@ export default function Formulary() {
 
     return (
         <section className='register'>
-            <div className="contenedor2">
-                <div className="contenedorImagen1">
+            <div className="conteiner2">
+                <div className="conteinerImg">
                     <img src={image} alt="" />
                 </div>
-                <div className="contenedorContenido1">
+                <div className="conteinerContent">
                     <div className="navBarUno"><NavLogin /></div>
-                    <div className="contenedorFormulario1" >
+                    <div className="conteinerform" >
                         <div className='init-title'>
                             <h2 className='title-login1'>Registro</h2>
-                            <h4 className='subtitle-formulary1'>Introduce tus datos para el registro</h4>
+                            <h4 className='subtitle-form'>Introduce tus datos para el registro</h4>
                         </div>
                         <div className="inputs1">
                             <div>
@@ -61,7 +62,7 @@ export default function Formulary() {
                             <div className='w-33'>
                                 <div className="center">
                                     <Register />
-                                    <h5 className='btn-sesion'>Registro</h5>
+                                    <button className='btn-sesion'>Registro</button>
                                 </div>
                                 <div className='box-log-in'>
                                     <h4 className='subtitle-log-in' onClick={navigateToLogin}>¿Ya tienes cuenta? <b>Inicia Sesión</b></h4>
