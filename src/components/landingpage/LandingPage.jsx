@@ -6,9 +6,9 @@ import NavbarLanding from "../navbar-landing/NavbarLanding";
 import ImgDelivery from "../img-repartidor/ImgDelivery";
 import TextOrderLanding from "../text-orderLanding/TextOrderLanding";
 import WorkKometa from "../work-kometa/WorkKometa";
-import FooterLanding from "../footerlanding/FooterLanding";
-import StartOrder from "../startorder/StartOrder";
-import WeMakeLanding from "../wemeke-landing/WeMakeLanding";
+import FooterLanding from "../footer-landing/FooterLanding";
+import StartOrder from "../start-order/StartOrder";
+import WeMakeLanding from "../wemake-landing/WeMakeLanding";
 
 
 function LandingPage() {

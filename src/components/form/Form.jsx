@@ -7,7 +7,7 @@ import Register from '../../components/register/Register';
 import '../../assets/styles/form.css'
 
 
-export default function Formulary() {
+function Form () {
 
     const [name, setName] = useState('')
     const [lastName, setLastName] = useState('')
@@ -76,3 +76,4 @@ export default function Formulary() {
         </section>
     );
 }
+export default Form
