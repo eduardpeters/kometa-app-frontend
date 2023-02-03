@@ -6,7 +6,7 @@ import SelectorUser from '../selector-user/SelectorUser.jsx'
 import SmallCard3Items from '../small-cards/SmallCard3Items';
 import SmallCardDeliveryMan from '../small-cards/SmallCardDeliveryMan.jsx';
 import SmallCardPrice from '../small-cards/SmallCardPrice';
-import map from "../../assets/Images/map.jpg"
+import map from "../../assets/Images/map2.png"
 import { MdOutlineClose } from "react-icons/md";
 import { MdOutlineCall } from "react-icons/md";
 import { MdOutlineChatBubbleOutline } from "react-icons/md";
@@ -24,7 +24,7 @@ const DeliveryDetails = () => {
     const navigate = useNavigate();
 
     const navigateToNoOrder = () => {
-        navigate('/');
+        navigate('/no-order');
     };
 
     return (
