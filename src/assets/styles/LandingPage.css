@@ -327,41 +327,6 @@
     margin-bottom: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.textito3{
-    text-align: center;
-    font-size: 15px;
-    font-weight: 100;
-}
-
-.containerIzquierdo {
-    display: flex;
-    margin-right: 60px;
-}
-
-.containerBtn {
-    display: flex;
-}
-
-.btn-box{
-    margin-bottom: 90px;
-}
-
-
 .conteinerOrders {
     margin-left: 60px;
 }
