@@ -7,8 +7,8 @@ import ImgDelivery from "../img-repartidor/ImgDelivery";
 import TextOrderLanding from "../text-orderLanding/TextOrderLanding";
 import WorkKometa from "../work-kometa/WorkKometa";
 import FooterLanding from "../footerlanding/FooterLanding";
-import LogoGroup from "../logo-group-landing/LogoGroup";
 import StartOrder from "../startorder/StartOrder";
+import WeMakeLanding from "../wemeke-landing/WeMakeLanding";
 
 
 function LandingPage() {
@@ -33,7 +33,7 @@ function LandingPage() {
                     <PlaceOrder/>
                 </div>
                 <div>
-                    <LogoGroup/>
+                    <WeMakeLanding/>
                 </div>
                 <div>
                     <OpinionClient/>
