@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import loginAPI from "../../services/loginAPI";
 import '../../assets/styles/login.css'
 import image from '../../assets/Images/repartidorlogin.png'
 import NavLogin from "../../components/nav-login/NavLogin.jsx";
@@ -10,22 +11,29 @@ function Login() {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [storeToken, setStoreToken] = useState(false);
 
     async function handleLoginSubmit(event) {
         event.preventDefault();
-        console.log("Post Login!");
+        const response = await loginAPI.postLogin(email, password);
+        if (response.error) {
+            console.error(response.error);
+        } else {
+            console.log(`You are a ${response.userRole} with UUID: ${response.userUUID}. This is your token: ${response.token}`);
+        }
+        console.log("Store token in localStorage?", storeToken);
     }
 
     return (
         <section className="login">
-            <div class="login-image-container">
+            <div className="login-image-container">
                 <img src={image} alt="delivery person" />
             </div>
             <div className="login-content">
                 <div className="login-navbar">
                     <NavLogin />
                 </div>
-                <form class="login-form" onSubmit={handleLoginSubmit}>
+                <form className="login-form" onSubmit={handleLoginSubmit}>
                     <div className='form-title'>
                         <h2 className='title-log-in'>Inicio de sesión</h2>
                         <h4 className='subtitle-login'>Introduce tus datos para iniciar sesión</h4>
@@ -39,11 +47,9 @@ function Login() {
                             <label htmlFor="password" className='title-input'>Contraseña</label>
                             <input className='input' value={password} onChange={(e) => setPassword(e.target.value)} type="password" required placeholder='*************' id="password" />
                         </div>
-                        <div className="center4">
-                            <div class="check-container">
-                                <input className="checkbox" type="checkbox" id="remember" />
-                                <label htmlFor="remember" className="slider"> Recuérdame</label>
-                            </div>
+                        <div className="check-container">
+                            <input className="checkbox" onChange={() => setStoreToken(!storeToken)} type="checkbox" id="remember" />
+                            <label htmlFor="remember" className="slider"> Recuérdame</label>
                         </div>
                         <button className='btn-login' type="submit">Inicio de sesión</button>
                     </div>
