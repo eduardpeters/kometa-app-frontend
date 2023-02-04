@@ -1,23 +1,17 @@
 .login {
     width: 100vw;
     height: 100vh;
-}
-
-.conteiner1 {
-    background: white;
-    width: 100%;
-    height: 100%;
     display: flex;
-
+    background: white;
 }
 
-.conteinerImg1 {
+.login-image-container {
     position: relative;
     width: 50%;
     height: 100%;
 }
 
-.conteinerImg1 img {
+.login-image-container img {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,23 +20,20 @@
     object-fit: cover;
 }
 
-.conteinerContent1 {
-    position: relative;
-    display: flex;
-    width: 50%;
-    height: 50%;
-    align-items: center;
-    flex-direction: column;
-}
-
-.conteinerForm1 {
+.login-content {
     width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .inputs span {
     font-size: 1em;
@@ -51,8 +42,7 @@
     letter-spacing: 1px;
 }
 
-
-.btn-sesion{
+.btn-sesion {
     margin-top: 10px;
     color: white;
     font-weight: 600;
@@ -62,13 +52,13 @@
     padding-top: 12px;
     padding-bottom: 12px;
     border-radius: 8px;
-    width:380px;
+    width: 380px;
     margin-left: 65px;
     text-align: center;
     border: none;
 }
 
-.btn-sesion:hover{
+.btn-sesion:hover {
     background-color: #4062FF;
     color: white;
 }
@@ -77,87 +67,78 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  
-  .center1 {
-    line-height: 50px;
-  }
+}
 
-.slider{
+.center1 {
+    line-height: 50px;
+}
+
+.slider {
     font-size: 13.5px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-
-
-  
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
     section {
         padding: 10px;
     }
-    .conteinerImg1 {
+
+    .login-image-container {
         position: absolute;
         width: 100%;
         top: 0;
         left: 0;
         height: 100%;
     }
-    .conteinerContent1{
-        width: 100%;
-        height: 100%;
-        z-index: 3;
-    }
-    .conteinerForm1 {
+
+    .login-form {
         width: 100%;
         padding: 25px;
-        background: rgba(255, 255, 255, .9);
+        background: #ffffffe6;
     }
 }
 
-.title-login{
+.title-login {
     font-size: 20px;
     font-weight: 500;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
 }
 
-.title-log-in{
-    font-size:32px;
+.title-log-in {
+    font-size: 32px;
     font-weight: 500;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
 }
 
-.subtitle-login{
+.subtitle-login {
     font-size: 15px;
     font-weight: 10;
-    color: #D1D1D1;   
+    color: #D1D1D1;
 }
 
-.init-title{
+.form-title {
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     line-height: 0px;
     position: relative;
-    top: 40px;
+    top: 30px;
 }
 
-.link-register{
+.link-register {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.input{
+.input {
     width: 500px;
     height: 40px;
-    border: 1px solid rgb(209, 209, 209, 0.5);
+    border: 1px solid #d1d1d180;
     border-radius: 4px;
     font-size: 14px;
     color: #081020;
@@ -165,49 +146,50 @@
     margin-bottom: 15px;
 }
 
-.title-input{
+.title-input {
     font-size: 14px;
     font-weight: 600;
-    color: rgb(57, 57, 57);
+    color: #393939;
 }
 
-.inputs{
+.login-inputs {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 500px;
 }
 
-.btn-box{
+.login-field {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.btn-box {
     display: flex;
     justify-content: center;
 }
 
-.swtich-container{
+.swtich-container {
     display: flex;
     justify-content: center;
 }
 
-.checkbox{
+.checkbox {
     margin-right: 8px;
 }
 
-.navBarUno {
+.login-navbar {
     width: 50vw;
     display: flex;
     justify-content: flex-end;
 }
 
-.navBarUno img {
-    margin-right: 30px;
-}
-
-.subtitle-log-in{
+.subtitle-log-in {
     font-size: 15px;
     font-weight: 500;
 }
 
-.box-log-in{
+.box-register {
     width: 100%;
     display: flex;
     flex-direction: row;

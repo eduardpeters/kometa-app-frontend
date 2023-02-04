@@ -18,7 +18,7 @@ function Form () {
     const navigate = useNavigate();
 
     const navigateToLogin = () => {
-        navigate('/');
+        navigate('/login');
     };
 
     return (
@@ -28,7 +28,9 @@ function Form () {
                     <img src={image} alt="" />
                 </div>
                 <div className="conteinerContent">
-                    <div className="navBarUno"><NavLogin /></div>
+                    <div className="login-navbar">
+                        <NavLogin />
+                    </div>
                     <div className="conteinerform" >
                         <div className='init-title'>
                             <h2 className='title-login1'>Registro</h2>
@@ -71,7 +73,6 @@ function Form () {
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
     );

@@ -1,6 +1,11 @@
-.nav-login{
+.nav-login {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-login img {
     margin-right: 32px;
     margin-top: 32px;
     width: 150px;
-
+    margin-right: 30px;
 }
