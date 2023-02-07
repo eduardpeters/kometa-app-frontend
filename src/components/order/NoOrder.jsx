@@ -3,7 +3,7 @@ import "../../assets/styles/new-delivery.css";
 import image from "../../assets/Images/empty.png";
 import { useNavigate } from 'react-router-dom';
 
-const NewDelivery = () => {
+const NoOrder = (props) => {
 
   
   const navigate = useNavigate();
@@ -23,4 +23,4 @@ const NewDelivery = () => {
   )
 }
 
-export default NewDelivery
+export default NoOrder

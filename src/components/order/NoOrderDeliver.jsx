@@ -1,20 +1,12 @@
 import React from 'react'
 import "../../assets/styles/new-delivery.css";
 import image from "../../assets/Images/empty.png";
-import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import toggle from '../../assets/Images/switch-on.svg'
 import PopupDelivery from '../popup-delivery/PopupDelivery';
 
-const NewDeliveryDeliver = () => {
+const NoOrderDeliver = () => {
 
     const [toggle, setToggle] = useState(false)
-
-    const navigate = useNavigate();
-
-    const navigateToCreateOrder = () => {
-        navigate('/create-order');
-    };
 
     const showPopup = () => {
         setTimeout(() => {
@@ -44,4 +36,4 @@ const NewDeliveryDeliver = () => {
             )
 }
 
-            export default NewDeliveryDeliver
+            export default NoOrderDeliver

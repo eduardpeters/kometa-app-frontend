@@ -20,33 +20,33 @@ function LandingPage() {
                 <NavbarLanding />
             </div>
             <div className='containerBody'>
-                    <div className='containerText'>
-                        <div className='conteinerOrders'>
-                            <TextOrderLanding />
-                        </div>
-                    </div>
-                    <div className='containerImg'>
-                        <ImgDelivery/>
+                <div className='containerText'>
+                    <div className='conteinerOrders'>
+                        <TextOrderLanding />
                     </div>
                 </div>
-                <div className='theplace'>
-                    <PlaceOrder/>
+                <div className='containerImg'>
+                    <ImgDelivery />
                 </div>
-                <div>
-                    <WeMakeLanding/>
-                </div>
-                <div>
-                    <OpinionClient/>
-                </div>
-                <div>
-                    < StartOrder/>
-                </div>
-                <div>
-                    < WorkKometa/>
-                </div>
-                <div>
-                    < FooterLanding/>
-                </div>
+            </div>
+            <div className='theplace'>
+                <PlaceOrder />
+            </div>
+            <div>
+                <WeMakeLanding />
+            </div>
+            <div>
+                <OpinionClient />
+            </div>
+            <div>
+                < StartOrder />
+            </div>
+            <div>
+                < WorkKometa />
+            </div>
+            <div>
+                < FooterLanding />
+            </div>
 
         </div>
     )
