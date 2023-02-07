@@ -5,21 +5,21 @@
 
 }
 
-.contenedor2 {
+.conteiner2 {
     background: white;
     width: 100%;
     height: 100%;
     display: flex;
 }
 
-.contenedorImagen1 {
+.conteinerImg {
     position: relative;
     width: 50%;
     height: 143%;
     object-fit: cover;
 }
 
-.contenedorImagen1 img {
+.conteinerImg img {
     position: absolute;
     top: 0;
     left: 0;
@@ -36,7 +36,7 @@
 
 }
 
-.subtitle-formulary1{
+.subtitle-form{
     font-size: 15px;
     font-weight: 10;
     color: #D1D1D1;   
@@ -61,7 +61,7 @@
     top: 180px;
 }
 
-.contenedorFormulario1 {
+.conteinerform {
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -69,7 +69,7 @@
     align-items: center; 
 }
 
-.contenedorContenido1 {
+.conteinerContent {
     position: relative;
     display: flex;
     width: 50%;
@@ -82,6 +82,7 @@
 .subtitle-log-in{
     font-size: 15px;
     font-weight: 500;
+    cursor:pointer;
 }
 
 .box-log-in{
@@ -90,3 +91,4 @@
     flex-direction: row;
     justify-content: center;
 }
+
