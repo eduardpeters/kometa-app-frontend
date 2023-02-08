@@ -1,0 +1,62 @@
+.selector-completed {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 80px;
+    top: 108px;
+}
+
+.selector-name {
+    text-decoration: inherit;
+    color: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 8px;
+    width: 50%;
+    height: 40px;
+    /* 05 - Tab / Selected */
+
+    box-shadow: inset 0px -2px 0px #DDDBDA;
+}
+
+.selector-name:active {
+    text-decoration: inherit;
+    color: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: inset 0px -2px 0px #4062FF;
+}
+
+.selector-name:active,
+.selector-name:hover,
+.selector-name:focus {
+    text-decoration: inherit;
+    color: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: inset 0px -2px 0px #4062FF;
+}
+
+.selector-name:hover {
+    text-decoration: inherit;
+    color: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: inset 0px -2px 0px #4062FF;
+}
+
+.selector-name:active:hover,
+.selector-name:focus:hover,
+.selector-name:focus {
+    text-decoration: inherit;
+    color: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: inset 0px -2px 0px #4062FF;
+}

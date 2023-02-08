@@ -1,0 +1,42 @@
+.search {
+    position: absolute;
+    width: 261px;
+    height: 32px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #DDDBDA;
+    justify-content: space-around;
+    right: 80px;
+    top: 120px;
+}
+
+.icon-search {
+    height: 16px;
+    width: 16px;
+    left: 10px;
+    position: absolute;
+    color: gray;
+}
+
+.search-name{
+    font-weight: normal;
+    font-size: 14px;
+    position: absolute;
+    left: 40px;
+    color: gray;
+    border: none;
+}
+
+.search-name:focus{
+    outline: none;
+}
+
+.search-name:active{
+    outline: none;
+}
+
+.search-name:hover{
+    outline: none;
+}

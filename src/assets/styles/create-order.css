@@ -1,0 +1,152 @@
+.create-order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-create-order{
+    position: absolute;
+    width: 524px;
+    height: 760px;
+    top: 220px;
+/*     left: 420px; */
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.title-create-order{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.div-subtitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.subtitle{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header-create-order{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.files{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.input2{
+    width: 500px;
+    height: 40px;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #081020;
+    padding-left: 16px;
+}
+
+.title-input{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(57, 57, 57);
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.small-input{
+    width: 225px;
+    height: 40px;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #D1D1D1;
+    padding-left: 16px;
+}
+
+.small-inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.upload-file{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #4062FF;
+    border-radius:  8px;
+    margin-right: 32px;
+}
+
+.file-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buttons-create{
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 40px;
+}
+
+.div-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.inputs1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.btn-next{
+    position: absolute;
+    bottom: 40px;
+    width: 200px;
+    height: 42px;
+    background-color: #4062FF;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: center;
+}

@@ -1,9 +1,10 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #F6F6F6;
   margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
