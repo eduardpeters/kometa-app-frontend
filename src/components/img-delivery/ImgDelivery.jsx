@@ -11,4 +11,4 @@ function ImgDelivery() {
     </>
   )
 }
-export default  ImgDelivery
+export default ImgDelivery

@@ -2,6 +2,7 @@ import React from "react";
 import movil from '../../assets/Images/mobile_app.png'
 import TakeAway from '../../assets/Images/TakeAway.png'
 import world from '../../assets/Images/world.png'
+import '../../assets/styles/we-make-landing.css'
 
 function WeMakeLanding() {
 
