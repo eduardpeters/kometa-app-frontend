@@ -1,5 +1,5 @@
 import React from "react";
-import '../../assets/styles/LandingPage.css'
+import '../../assets/styles/footerlanding.css'
 import logo from '../../assets/Images/logo-kometa.png'
 import redes from '../../assets/Images/redesKometa.png'
 
@@ -7,8 +7,8 @@ function FooterLanding() {
 
     return (
         <>
-            <div className='container-Footer'>
-                <div className='containerFooter-left'>
+            <div className='conteiner-Footer'>
+                <div className='conteinerFooter-left'>
                     <img className='logs-Kometa' src={logo} width='157px' height='42' alt="Logo" />
                     <div className='footer-text'>
                         <h6 className='term-Cond'>Nuestro objetivo es crear una</h6>

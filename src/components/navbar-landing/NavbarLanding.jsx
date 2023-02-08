@@ -1,32 +1,21 @@
 import React from "react";
 import logo from '../../assets/Images/logo-kometa.png'
 import '../../assets/styles/navbar-landing.css'
-import { useNavigate } from "react-router";
-
+import { Link } from 'react-router-dom'
 
 function NavbarLanding() {
-    
-    const navigate = useNavigate();
-
-    const navigateInit = () => {
-        navigate('/login');
-    };
-
-    const navigateRegister = () => {
-        navigate('/register');
-    };
-
 
     return (
         <>
             <div className='navbarLanding'>
                 <div className='left-navbarLanding'>
-                    <img className='logo-navbarLanding' height='42' width='157' src={logo}  alt="Logo" />
+                    <img className='logo-navbarLanding' height='42' width='157' src={logo} alt="Logo" />
                 </div>
                 <div className='right-navbarLanding'>
-                    <button className='btn-loginlanding' onClick={navigateInit} >Inicio de Sesión</button>
+                    <Link to='/login'> <button className="btn-register1">Inicio de Sesión</button></Link>
                     <div>
-                    <button onClick={navigateRegister} className='btn-register' >Registro</button>
+                        <Link to={'/register'}><button className='btn-register' >Registro</button>
+                        </Link>
                     </div>
                 </div>
             </div>

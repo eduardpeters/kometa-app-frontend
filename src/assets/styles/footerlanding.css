@@ -1,0 +1,36 @@
+.logs-Kometa {
+    margin-left: 30px;
+}
+
+.term-Cond {
+    font-size: xx-small;
+    color: gray;
+    margin-right: 30px;
+    margin-left: 30px;
+    line-height: 1%;
+}
+
+.redes-Kometa {
+    margin-left: 85px;
+    margin-bottom: 30px;
+}
+
+
+.conteiner-Footer {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.conteinerFooter-left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+
+}
+
+.containerFooter-Right {
+    margin-right: 60px;
+}

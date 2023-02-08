@@ -1,0 +1,40 @@
+/* OpinionClient */
+
+.container-Opinion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.text-Opinion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 60px;
+    margin-left: 40px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.textclient{
+    letter-spacing: 5px;
+    font-size: 12pt;
+    font-weight: 50;
+    color: #4062FF;
+}
+
+.title-opinions{
+    font-size: 50px;
+}
+
+.h6-opinion{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+    padding-right: 100px;
+    text-align: left;
+}
+
+.start-opinion{
+    margin-top: 30px;
+}

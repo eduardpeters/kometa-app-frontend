@@ -1,55 +1,62 @@
-.login {
+
+
+
+.register {
     width: 100vw;
     height: 100vh;
     display: flex;
     background: white;
 }
 
-.login-image-container {
+.register-image-container {
     position: relative;
     width: 50%;
     height: 100%;
 }
 
-.login-image-container img {
+.register-image-container img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    height: 130vh;
 }
 
-.login-content {
+.register-content {
     width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+    height: 130vh;
+    background: white;
+    }
 
-.login-navbar {
+.register-navbar {
     width: 50vw;
     display: flex;
     justify-content: flex-end;
+    margin-top: -70px;
 }
 
-.login-form {
+.register-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.form-title {
-    margin: 20px 0;
+.form-register-title{
+    margin: 10px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     line-height: 0px;
 }
 
-.title-log-in {
+.title-register {
     font-size: 32px;
     font-weight: 500;
     display: flex;
@@ -57,19 +64,20 @@
     align-items: center;
 }
 
-.subtitle-login {
+.subtitle-register {
     font-size: 15px;
     font-weight: 10;
     color: #D1D1D1;
 }
 
-.login-inputs {
+.register-inputs {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
-.login-field {
+.register-field {
     display: flex;
     flex-direction: column;
     margin: 5px;
@@ -93,7 +101,7 @@
 
 
 
-.input {
+.register-input {
     width: 500px;
     height: 40px;
     border: 1px solid #d1d1d180;
@@ -101,43 +109,44 @@
     font-size: 14px;
     color: #081020;
     padding-left: 16px;
-    margin-bottom: 15px;
+    margin-bottom: -10px;
+
 }
 
-.title-input {
+.title-register-input {
     font-size: 14px;
     font-weight: 600;
     color: #393939;
     margin: 1rem 0;
 }
 
-.check-container {
+.check-register-container {
     display: flex;
     justify-content: center;
     line-height: 50px;
 }
 
-.checkbox {
+.checkbox-register {
     margin-right: 8px;
 }
 
-.btn-login:hover {
+.btn-register:hover {
     background-color: #4062FF;
     color: white;
 }
 
-.slider {
+.slider-register {
     font-size: 13.5px;
 }
 
-.box-register {
+.box-register-user {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.text-link {
+.text-link-register {
     color: inherit;
     text-decoration: inherit;
     font-weight: 100;
@@ -148,7 +157,7 @@
         padding: 10px;
     }
 
-    .login-image-container {
+    .register-image-container {
         position: absolute;
         width: 100%;
         top: 0;
@@ -156,7 +165,7 @@
         height: 100%;
     }
 
-    .login-form {
+    .register-form {
         width: 100%;
         padding: 25px;
         background: #ffffffe6;

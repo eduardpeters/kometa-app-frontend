@@ -1,0 +1,60 @@
+/* WeMakeLanding*/
+
+
+.title-wemake{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 10px;   
+}
+
+.contain-wemake{
+    margin-top: 50px;
+}
+
+.subtitle-wemake{
+    letter-spacing: 5px;
+}
+
+.subtitle-wemake2{
+    font-size: 50px;
+    line-height: 45%;
+}
+
+.contain-Icons{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 90px;
+    margin-left: 90px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33vw;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 05px;
+}
+
+.text-wemake3{
+    font-weight: 200;
+    text-align: center;
+}
+
+.text-wemake2{
+    font-weight: 200;
+    text-align: center;
+}
