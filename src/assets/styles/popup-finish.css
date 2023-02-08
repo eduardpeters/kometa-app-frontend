@@ -1,4 +1,4 @@
-.bg-popup-cancel-order {
+.bg-popup-finish {
     position: absolute;
     width: 100vw;
     height: 1000px;
@@ -10,26 +10,26 @@
     align-items: center;
 }
 
-.popup-cancel-order {
-    position: relative;
+.popup-finish {
+    position:relative;
     width: 328px;
-    height: 240px;
+    height: 400px;
     background-color: white;
     border-radius: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.title-popup-cancel {
+.title-popup-finish {
     font-size: 18px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 16px;
 }
 
-.text-popup-cancel {
+.text-popup-finish {
     font-weight: 300;
     font-size: 12px;
     color: gray;
@@ -39,14 +39,7 @@
     margin-bottom: 32px;
 }
 
-.btns-popup-cancel {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 240px;
-}
-
-.btn-cancel-popup {
+.btn-finish-popup {
     width: 115px;
     height: 40px;
     background-color: white;
@@ -58,4 +51,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.text-area{
+    border: none;
+    background-color: rgb(228, 228, 228);
+    color: black;
+    width: 200px;
+    height: 100px;
+    border-radius: 8px;
+    padding: 8px;
 }
