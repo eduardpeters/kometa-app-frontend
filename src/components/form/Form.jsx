@@ -18,7 +18,7 @@ function Form () {
     const navigate = useNavigate();
 
     const navigateToLogin = () => {
-        navigate('/');
+        navigate('/login');
     };
 
     return (

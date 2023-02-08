@@ -7,7 +7,7 @@ const SelectorUser = () => {
 
     return (
         <div className="selector-completed">
-            <Link className='selector-name' to="/">Mi pedido</Link>
+            <Link className='selector-name' to="/order">Mi pedido</Link>
             <Link className='selector-name' to="/history-user">Historial</Link>
         </div>
     )

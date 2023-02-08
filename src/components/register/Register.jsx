@@ -9,7 +9,7 @@ function Register() {
                 <div>
                 <input className="checkbox" type="checkbox" id="switch" />
                 </div>
-                <div className="slider"><span className="remember"> Recuérdame</span>
+                <div className="slider1"><span className="remember"> Recuérdame</span>
                 </div>
             </div>
 

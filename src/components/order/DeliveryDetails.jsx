@@ -1,8 +1,5 @@
 import React from 'react'
 import "../../assets/styles/delivery-details.css";
-import Navbar from '../navbar/Navbar.jsx'
-import Search from '../search/Search.jsx'
-import SelectorUser from '../selector-user/SelectorUser.jsx'
 import SmallCard3Items from '../small-cards/SmallCard3Items';
 import SmallCardDeliveryMan from '../small-cards/SmallCardDeliveryMan.jsx';
 import SmallCardPrice from '../small-cards/SmallCardPrice';
@@ -16,6 +13,7 @@ import BtnEstimatedHour from '../buttons/btns-status/BtnEstimatedHour';
 import PopupCancelOrder from '../popup-cancel-order/PopupCancelOrder';
 import BtnCancelOrder from '../buttons/BtnCancelOrder';
 import BtnInDeliveryStatus from '../buttons/btns-status/BtnInDeliveryStatus.jsx';
+import PopupFinish from '../popup-finish/PopupFinish';
 
 const DeliveryDetails = () => {
 
@@ -29,9 +27,6 @@ const DeliveryDetails = () => {
 
     return (
         <div>
-            <Navbar />
-            <SelectorUser />
-            <Search />
             <div className='delivery-details-bg'>
                 <div className='left-container-delivery-details'>
                     <div>
@@ -67,6 +62,7 @@ const DeliveryDetails = () => {
                 </div>
             </div>
             {popup ? <PopupCancelOrder popup={popup} setPopup={setPopup}/> : null}
+            {/* <PopupFinish /> */}
         </div>
     )
 }

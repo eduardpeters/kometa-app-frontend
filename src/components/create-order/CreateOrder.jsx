@@ -28,8 +28,8 @@ const CreateOrder = () => {
 
     const navigate = useNavigate();
 
-    const navigateToNoOrder = () => {
-        navigate('/no-order');
+    const navigateToOrder = () => {
+        navigate('/order');
     };
 
     return (
@@ -41,7 +41,7 @@ const CreateOrder = () => {
                 <div className='bg-create-order'>{layer ? <>
                     <div className='header-create-order'>
                         <h1 className='title-create-order'>Realiza tu pedido - Detalles</h1>
-                        <MdOutlineClose onClick={navigateToNoOrder} size='24px' />
+                        <MdOutlineClose onClick={navigateToOrder} size='24px' />
                     </div>
                     <div className='files'>
                         <BtnUpload />
@@ -88,7 +88,7 @@ const CreateOrder = () => {
                 </> : <>
                     <div className='header-create-order'>
                         <h1 className='title-create-order'>Realiza tu pedido - Pago</h1>
-                        <MdOutlineClose onClick={navigateToNoOrder} size='24px' />
+                        <MdOutlineClose onClick={navigateToOrder} size='24px' />
                     </div>
 
                     <div className='inputs2'>

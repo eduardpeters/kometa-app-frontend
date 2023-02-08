@@ -1,6 +1,6 @@
 import React from 'react'
 import "../../assets/styles/small-card/small-card.css";
-import deliveryMan from '../../assets/Images/delivery-man.jpg'
+import deliveryMan from '../../assets/Images/delivery-man.png'
 
 const InfoDeliveryMan = () => {
     return (
