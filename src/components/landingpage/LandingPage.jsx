@@ -34,9 +34,9 @@ function LandingPage() {
             </div>
             <WeMakeLanding />
             <OpinionClient />
-            < StartOrder />
-            < WorkKometa />
-            < FooterLanding />
+            <StartOrder />
+            <WorkKometa />
+            <FooterLanding />
         </div>
     )
 }

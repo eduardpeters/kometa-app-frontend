@@ -35,7 +35,7 @@
     width: 50vw;
     display: flex;
     justify-content: flex-end;
-    margin-top: -70px;
+    margin-top: 0px
 }
 
 .register-work-form {
@@ -94,6 +94,8 @@
     margin-left: 65px;
     text-align: center;
     border: none;
+    margin-top: -5px;
+    margin-bottom: -5PX;
 }
 
 
@@ -115,6 +117,7 @@
     font-weight: 600;
     color: #393939;
     margin: 1rem 0;
+    line-height: 5px;
 }
 
 .checkwork-register-container {
@@ -134,6 +137,7 @@
 
 .slider-work-register {
     font-size: 13.5px;
+    margin-top: 10px;
 }
 
 .boxwork-register-user {
@@ -147,6 +151,7 @@
     color: inherit;
     text-decoration: inherit;
     font-weight: 100;
+    font-size: 13.5px;
 }
 
 @media screen and (max-width:768px) {

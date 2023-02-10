@@ -1,10 +1,19 @@
 .conteinerBody {
     display: flex;
     margin-bottom: 130px;
-    margin-top: 70px;
-    margin-right: 60px;
+    margin-top: 90px;
+    margin-right: 70px;
+    margin-left: 60px;
 }
 
+.conteinerOrders {
+    margin-left: 60px;
+}
+
+@media screen and (max-width:768px) {
+    section {
+        padding: 10px;
+    }
 
 .conteinerText {
     display: flex;
@@ -18,11 +27,7 @@
     margin-bottom: 120px;
 }
 
-
-.conteinerOrders {
-    margin-left: 60px;
-}
-
 .conteinerImg {
     margin-right: 60px;
+}
 }

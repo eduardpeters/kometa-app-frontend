@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import loginAPI from "../../services/loginAPI";
 import '../../assets/styles/login.css'
 import image from '../../assets/Images/repartidorlogin.png'
@@ -8,6 +8,8 @@ import NavLogin from "../../components/nav-login/NavLogin.jsx";
 // import Googlebtn from '../components/Googlebtn'
 
 function Login() {
+
+    const navigate = useNavigate();
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -20,6 +22,7 @@ function Login() {
             console.error(response.error);
         } else {
             console.log(`You are a ${response.userRole} with UUID: ${response.userUUID}. This is your token: ${response.token}`);
+            navigate('/order')
         }
         console.log("Store token in localStorage?", storeToken);
     }
@@ -49,7 +52,7 @@ function Login() {
                         </div>
                         <div className="check-container">
                             <input className="checkbox" onChange={() => setStoreToken(!storeToken)} type="checkbox" id="remember" />
-                            <label htmlFor="remember" className="slider"> Recuérdame</label>
+                            <label htmlFor="remember" className="checkbox-text"> Recuérdame</label>
                         </div>
                         <button className='btn-login' type="submit">Inicio de sesión</button>
                     </div>

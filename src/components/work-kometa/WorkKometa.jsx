@@ -16,7 +16,7 @@ function WorkKometa() {
                     <div className='containerWork-text'>
                         <h6 className='subtitle-workLandin'>TRABAJA CON NOSOTROS</h6>
                         <h1 className='subtitle-workLandin3'>¿Quieres trabajar con nosotros?</h1>
-                        <h6>Completa nuestro formulario de inscripción para formar parte de nuestra red de repartidores. Si cumples con los requisitos empezará nuestra aventura.</h6>
+                        <h6 className="second-subtitle">Completa nuestro formulario de inscripción para formar parte de nuestra red de repartidores. Si cumples con los requisitos empezará nuestra aventura.</h6>
                     </div>
                     <Link to={'/register-work'}><button className='button-work' >Realizar Solicitud</button>
                     </Link>

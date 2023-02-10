@@ -6,6 +6,7 @@ import NavLogin from '../nav-login/NavLogin';
 import image from '../../assets/Images/repartidorlogin.png'
 import '../../assets/styles/register.css'
 
+
 function RegisterUser() {
 
     const navigate = useNavigate();
@@ -75,7 +76,7 @@ function RegisterUser() {
                         </div>
                         <div className="register-field">
                             <label htmlFor="email" className='title-register-input'>Telefono</label>
-                            <input className='register-input' value={phone} onChange={(e) => setPhone(e.target.value)} type="text" required placeholder='(+34) - 111- 22222' id="phone" />
+                            <input className='register-input' value={phone} onChange={(e) => setPhone(e.target.value)} type="text" required placeholder='(+34)-111-222222' id="phone" />
                         </div>
                         <div className="register-field">
                             <label htmlFor="password" className='title-register-input'>Contraseña</label>
@@ -84,16 +85,16 @@ function RegisterUser() {
                         <div className="register-field">
                             <label htmlFor="confirmpassword" className='title-register-input'>Confirme Contraseña</label>
                             <input className='register-input' value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} type="password" required placeholder='*************' id="confirmpassword" />
-                        </div> 
+                        </div>
                         <div className="check-register-container">
                             <input className="checkbox-register" onChange={() => setStoreToken(!storeToken)} type="checkbox" id="remember" />
                             <label htmlFor="remember" className="slider-register"> Recuérdame</label>
                         </div>
-                        <button className='btn-register' type="submit">Registrarme</button>
+                        <button className='btn-registers' type="submit">Registrarme</button>
                     </div>
                 </form>
                 <div className="box-register-user">
-                    <h4 className='subtitle-log-in' >
+                    <h4 className='subtitle-reg-in' >
                         <Link to="/login" className="text-link-register">
                             ¿Ya tienes cuenta? <b>Inicia Sesión</b>
                         </Link>
@@ -104,4 +105,3 @@ function RegisterUser() {
     );
 }
 export default RegisterUser
-

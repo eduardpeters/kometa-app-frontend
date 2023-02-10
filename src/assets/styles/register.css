@@ -38,7 +38,7 @@
     width: 50vw;
     display: flex;
     justify-content: flex-end;
-    margin-top: -70px;
+    margin-top: 0px
 }
 
 .register-form {
@@ -53,7 +53,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 0px;
+    line-height: 5px;
 }
 
 .title-register {
@@ -83,7 +83,7 @@
     margin: 5px;
 }
 
-.btn-login {
+.btn-registers {
     margin-top: 10px;
     color: white;
     font-weight: 600;
@@ -97,6 +97,8 @@
     margin-left: 65px;
     text-align: center;
     border: none;
+    margin-top: -5px;
+    margin-bottom: -5PX;
 }
 
 
@@ -118,6 +120,7 @@
     font-weight: 600;
     color: #393939;
     margin: 1rem 0;
+    line-height: 5px;
 }
 
 .check-register-container {
@@ -130,13 +133,14 @@
     margin-right: 8px;
 }
 
-.btn-register:hover {
+.btn-registers:hover {
     background-color: #4062FF;
     color: white;
 }
 
 .slider-register {
     font-size: 13.5px;
+    margin-top: 10px;
 }
 
 .box-register-user {
@@ -150,6 +154,7 @@
     color: inherit;
     text-decoration: inherit;
     font-weight: 100;
+    font-size: 13.5px;
 }
 
 @media screen and (max-width:768px) {
