@@ -7,9 +7,10 @@
     border-radius: 30px;
     background-color: #4062FF;
     margin-top: 90px;
-    margin-left: 150px;
+    margin-left: 120px;
     margin-bottom: 90px;
     align-items: center;
+    padding: 30px;
 }
 
 .btnlogin2 {
@@ -28,10 +29,14 @@
     cursor: pointer;
 }
 
-.startContainer-left1 {
+.startContainer-order-left{
     padding-left: 70px;
-    padding-right: 50px;
+    padding-right: 70px;
     margin-bottom: 40px;
+}
+
+.place-Container.right{
+    padding: 70px;
 }
 
 .subtitle-PlaceOrder {
@@ -39,3 +44,60 @@
     margin-bottom: 30px;
     padding-right: 70px;
 }
+
+
+    @media screen and (max-width:720px){
+
+        .place-Constainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 80%;
+            height: 260px;
+            border-radius: 30px;
+            background-color: #4062FF;
+            margin-top: 90px;
+            margin-left: 120px;
+            margin-bottom: 90px;
+            align-items: center;
+            padding: 30px;
+        }
+        
+        .moto-girl{
+            width: '200';
+        }
+
+        .btnlogin2 {
+            bottom: 40px;
+            width: 150px;
+            height: 42px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background-color: white;
+            border-radius: 8px;
+            border: none;
+            color: #4062FF;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        
+        .startContainer-order-left{
+            padding-left: 70px;
+            padding-right: 70px;
+            margin-bottom: 40px;
+        }
+        
+        .place-Container-right{
+            padding: 70px;
+        }
+        
+        .subtitle-PlaceOrder {
+            color: white;
+            margin-bottom: 30px;
+            padding-right: 70px;
+        }
+        
+        
+    }

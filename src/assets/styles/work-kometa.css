@@ -16,11 +16,11 @@
     align-items:flex-start;
     flex-direction: column;
     margin-top: 20px;
-    padding: 30px;
+    padding-left: 50px;
 }
 
 .containerWork-text{
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .subtitle-workLandin3{
@@ -46,10 +46,19 @@
     border-radius: 8px;
     border: none; 
     width: 150px;
-    margin-top: 30px;
+    margin-top: 0px;
+    margin-bottom: 50px;
     cursor:pointer;
 }
 
 .motoman2{
     margin-bottom: 20px;
+}
+
+.second-subtitle{
+    font-size: 18px;
+    font-weight: 100;
+    padding-right: 100px;
+    text-align: left;
+    line-height: 25px;
 }

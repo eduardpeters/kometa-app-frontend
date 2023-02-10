@@ -11,9 +11,9 @@ function StartOrder () {
             <div className='start-conteiner'>
                 <div className='start-container-left'>
                     <div className='startText'>
-                        <h7 className='subtitle-start-work' style={{ color: '#4062FF' }} >REALIZA YA TU PEDIDO</h7>
+                        <h6 className='subtitle-start-work'>REALIZA YA TU PEDIDO</h6>
                         <h1 className='subtitle-start-work2'>¡Empieza hoy con nosotros!</h1>
-                        <h7>Recibe tu pedido sin moverte de tu casa, aprovecha el tiempo y nosotros nos ocupamos del resto.</h7>
+                        <h6 className="text-start-order">Recibe tu pedido sin moverte de tu casa, aprovecha el tiempo y nosotros nos ocupamos del resto.</h6>
                     </div>
                     <div>
                     <Link to='/login'><button className='button-start-order'>Realizar pedido</button>
@@ -21,7 +21,7 @@ function StartOrder () {
                     </div>
                 </div>
                 <div className='startContainer.right'>
-                    <img className='motoman' width='600' src={motoman} alt="" />
+                    <img className='motoman-startorder' width='600' src={motoman} alt="" />
                 </div>
             </div>
         </>

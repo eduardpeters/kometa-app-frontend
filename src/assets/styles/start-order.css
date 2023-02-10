@@ -12,11 +12,22 @@
 
 .subtitle-start-work {
     letter-spacing: 5px;
+    font-size: 12pt;
+    font-weight: 50;
+    color: #4062FF;
 }
 
 .subtitle-start-work2 {
     font-size: 50px;
     line-height: 120%;
+}
+
+.text-start-order{
+    font-size: 18px;
+    font-weight: 100;
+    padding-right: 100px;
+    text-align: left;
+    line-height: 25px;
 }
 
 .button-start-order {
@@ -30,7 +41,6 @@
     border-radius: 8px;
     border: none;
     width: 150px;
-    margin-top: 30px;
     cursor: pointer;
 }
 
@@ -40,4 +50,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: 100;
+    padding-right: 100px;
+    text-align: left;
 }
+
