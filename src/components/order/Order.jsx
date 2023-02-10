@@ -6,10 +6,13 @@ import Search from '../search/Search'
 import SelectorUser from '../selector-user/SelectorUser'
 import DeliveryDetails from './DeliveryDetails'
 import NoOrder from './NoOrder'
+import { useUserContext } from '../../context/UserContext'
 
 const Order = () => {
 
     const[orders, setOrders] = useState([]);
+
+    const userContext = useUserContext();
     
     useEffect(() => {
         const getOrders = async(token) => {
@@ -17,7 +20,8 @@ const Order = () => {
            console.log(response);
            setOrders(response)
         }
-        getOrders();
+        console.log(userContext);
+        getOrders(userContext.token);
     }, [])
 
     return (

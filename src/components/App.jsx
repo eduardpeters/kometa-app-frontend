@@ -8,23 +8,26 @@ import Order from "./order/Order";
 import LandingPage from "./landingpage/LandingPage";
 import RegisterUser from "./register-user/RegisterUser";
 import RegisterWork from "./register-work/RegisterWork";
+import { UserContextProvider } from "../context/UserContext";
 
 function App() {
 
     return (
         <div className="App">
-            <Router>
-                <Routes>
-                    <Route path="/" element={<LandingPage />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/register" element={<RegisterUser/>} />
-                    <Route path="/order" element={<Order/>} />
-                    <Route path="/create-order" element={<CreateOrder />} />
-                    <Route path="/delivery-details" element={<DeliveryDetails />} />
-                    <Route path="/history-user" element={<HistoryUser />} />
-                    <Route path="/register-work" element={<RegisterWork/>}></Route>
-                </Routes>
-            </Router>
+            <UserContextProvider>
+                <Router>
+                    <Routes>
+                        <Route path="/" element={<LandingPage />} />
+                        <Route path="/login" element={<Login />} />
+                        <Route path="/register" element={<RegisterUser />} />
+                        <Route path="/order" element={<Order />} />
+                        <Route path="/create-order" element={<CreateOrder />} />
+                        <Route path="/delivery-details" element={<DeliveryDetails />} />
+                        <Route path="/history-user" element={<HistoryUser />} />
+                        <Route path="/register-work" element={<RegisterWork />}></Route>
+                    </Routes>
+                </Router>
+            </UserContextProvider>
         </div>
     );
 }

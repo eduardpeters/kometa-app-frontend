@@ -5,11 +5,14 @@ import loginAPI from "../../services/loginAPI";
 import '../../assets/styles/login.css'
 import image from '../../assets/Images/repartidorlogin.png'
 import NavLogin from "../../components/nav-login/NavLogin.jsx";
+import { useUserContext } from "../../context/UserContext";
 // import Googlebtn from '../components/Googlebtn'
 
 function Login() {
 
     const navigate = useNavigate();
+
+    const userContext = useUserContext();
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -22,6 +25,9 @@ function Login() {
             console.error(response.error);
         } else {
             console.log(`You are a ${response.userRole} with UUID: ${response.userUUID}. This is your token: ${response.token}`);
+            userContext.setUserUUID(response.userUUID);
+            userContext.setToken(response.token);
+            userContext.setRole(response.userRole);
             navigate('/order')
         }
         console.log("Store token in localStorage?", storeToken);
