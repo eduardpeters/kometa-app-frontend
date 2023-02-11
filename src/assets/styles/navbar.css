@@ -16,6 +16,7 @@
 
 .logo-navbar{
     width: 120px;
+    cursor: pointer;
 }
 
 .btn-logout{
@@ -27,11 +28,13 @@
     padding-top: 12px;
     padding-bottom: 12px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .btn-logout:hover{
     background-color: #4062FF;
     color: white;
+    cursor: pointer;
 }
 
 .left-navbar{

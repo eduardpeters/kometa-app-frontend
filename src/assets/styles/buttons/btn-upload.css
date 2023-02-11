@@ -9,6 +9,7 @@
     border-radius: 8px;
     border: 1px solid #4062FF;
     padding-left: 4px;
+    cursor: pointer;
 }
 
 .btn-name{

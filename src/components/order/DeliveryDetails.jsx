@@ -21,8 +21,8 @@ const DeliveryDetails = () => {
 
     const navigate = useNavigate();
 
-    const navigateToNoOrder = () => {
-        navigate('/no-order');
+    const navigateToOrder = () => {
+        navigate('/order');
     };
 
     return (
@@ -54,7 +54,7 @@ const DeliveryDetails = () => {
                         <BtnCancelOrder popup={popup} setPopup={setPopup} />
                         <MdOutlineChatBubbleOutline size='24px' color='#4062FF' />
                         <MdOutlineCall size='24px' color='#4062FF' />
-                        <MdOutlineClose onClick={navigateToNoOrder} size='24px' color='#4062FF' />
+                        <MdOutlineClose onClick={navigateToOrder} size='24px' color='#4062FF' />
                     </div>
                     <div className='img-bg-map' style={{ backgroundImage: `url(${map})` }}>
                         <BtnEstimatedHour />
