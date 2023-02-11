@@ -48,6 +48,11 @@ const CreateOrder = () => {
     console.log(userContext)
     const response = await ordersAPI.postOrder(userContext.token, orderDetails);
     console.log(response);
+    if (response.error) {
+      console.error(response.error);
+  } else {
+      navigate('/order');
+  }
   }
 
   return (
