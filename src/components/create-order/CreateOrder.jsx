@@ -42,8 +42,8 @@ const CreateOrder = () => {
             orderCharge: weight * units,
             originLongitude: origin[0],
             originLatitude: origin[1],
-            destinationLongitude: -3.69,
-            destinationLatitude: 40.42,
+            destinationLongitude: destination[0],
+            destinationLatitude: destination[1],
             description: description
         };
         console.log(userContext)
@@ -89,8 +89,12 @@ const CreateOrder = () => {
                                 </div>
 
                                 <div>
-                                    <h3 className="title-input">Punto de Entrega</h3>
-                                    <GeocoderInput reference="origin" setCoordinates={setOrigin} />
+                                    <h3 className="title-input">Punto de Recogida</h3>
+                                    <GeocoderInput
+                                        reference="origin"
+                                        setCoordinates={setOrigin}
+                                        placeholder="Introducir punto de recogida"
+                                    />
                                     <input
                                         className="input"
                                         value={origin}
@@ -98,11 +102,17 @@ const CreateOrder = () => {
                                         type="text"
                                         required
                                         placeholder="Introducir punto de entrega"
+                                        style={{zIndex: 2}}
                                     />
                                 </div>
 
                                 <div>
-                                    <h3 className="title-input">Punto de Recogida</h3>
+                                    <h3 className="title-input">Punto de Entrega</h3>
+                                    <GeocoderInput
+                                        reference="destination"
+                                        setCoordinates={setDestination}
+                                        placeholder="Introducir punto de entrega"
+                                    />
                                     <input
                                         className="input"
                                         value={destination}
