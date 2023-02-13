@@ -3,13 +3,11 @@ import CardActiveOrders from './CardActiveOrders'
 import ManyOrdersNavbar from './ManyOrdersNavbar'
 import '../../assets/styles/orders.css'
 
-const ManyOrders = () => {
+const ManyOrders = (props) => {
   return (
     <div className='bg-orders'>
         <ManyOrdersNavbar />
-        <CardActiveOrders />
-        <CardActiveOrders />
-        <CardActiveOrders />
+        {props.orders.map(order => <CardActiveOrders order={order}/>)}
     </div>
   )
 }

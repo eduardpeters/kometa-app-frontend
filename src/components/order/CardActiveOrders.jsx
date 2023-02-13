@@ -6,13 +6,13 @@ import InfoCardDestination from '../info-cards/InfoCardDestination'
 import InfoCardOrigin from '../info-cards/InfoCardOrigin'
 import InfoDeliveryMan from '../info-cards/InfoDeliveryMan'
 
-const CardActiveOrders = () => {
+const CardActiveOrders = (props) => {
 
   return (
     <div className='bg-component-order'>
       <InfoDeliveryMan />
-      <div className='details-order'>#HYUMPO789UI</div>
-      <div className='details-order'>9€</div>
+      <div className='details-order'>#{props.order.orderUUID.substring(0,10)}...</div>
+      <div className='details-order'>{props.order.orderCharge}€</div>
       <InfoCardOrigin />
       <InfoCardDestination />
       <BtnInDeliveryStatus />
