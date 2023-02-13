@@ -29,23 +29,23 @@
 }
 
 .orders-navbar-order-number{
-    padding-left: 3.5rem;
+    padding-left: 2.6rem;
 }
 
 .orders-navbar-price{
-    padding-left: 2.5rem;
+    padding-left: 2rem;
 }
 
 .orders-navbar-destination{
-    padding-left: 7rem;
+    padding-left: 0.5rem;
 }
 
 .orders-navbar-status{
-    padding-left: 5.5rem;
+    padding-right: 9rem;
 }
 
 .orders-navbar-origin{
-    padding-left: 1rem;
+    padding-right: 14rem;
 }
 
 .bg-component-order{
