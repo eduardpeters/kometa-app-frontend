@@ -1,16 +1,18 @@
 import React from 'react'
-import '../../assets/styles/history.css'
+import '../../assets/styles/orders.css'
 import BtnInDeliveryStatus from '../buttons/btns-status/BtnInDeliveryStatus'
+import BtnCompletedStatus from '../buttons/btns-status/BtnCompletedStatus'
 import InfoCardDestination from '../info-cards/InfoCardDestination'
 import InfoCardOrigin from '../info-cards/InfoCardOrigin'
 import InfoDeliveryMan from '../info-cards/InfoDeliveryMan'
 
-const HistoryInDeliveryUser = () => {
+const CardActiveOrders = (props) => {
+
   return (
-    <div className='bg-component-history'>
+    <div className='bg-component-order'>
       <InfoDeliveryMan />
-      <div className='details-history'>#HYUMPO789UI</div>
-      <div className='details-history'>9€</div>
+      <div className='details-order'>#{props.order.orderUUID.substring(0,10)}...</div>
+      <div className='details-order'>{props.order.orderCharge}€</div>
       <InfoCardOrigin />
       <InfoCardDestination />
       <BtnInDeliveryStatus />
@@ -18,4 +20,4 @@ const HistoryInDeliveryUser = () => {
   )
 }
 
-export default HistoryInDeliveryUser
+export default CardActiveOrders

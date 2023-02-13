@@ -4,7 +4,7 @@ import ordersAPI from '../../services/ordersAPI'
 import Navbar from '../navbar/Navbar'
 import Search from '../search/Search'
 import SelectorUser from '../selector-user/SelectorUser'
-import DeliveryDetails from './DeliveryDetails'
+import ManyOrders from './ManyOrders'
 import NoOrder from './NoOrder'
 import { useUserContext } from '../../context/UserContext'
 
@@ -29,7 +29,7 @@ const Order = () => {
             <Navbar />
             <SelectorUser />
             <Search />
-            {orders.length ? <DeliveryDetails /> : <NoOrder />}
+            {orders.length ? <ManyOrders orders={orders}/> : <NoOrder />}
         </>
     )
 }

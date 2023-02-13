@@ -13,7 +13,7 @@ const BtnAddOrder = () => {
       
   return (
     <div className='btn-box1'>
-        <button className='btn-add-order' onClick={navigateToCreateOrder}><span className='icon-plus'><IoIosAdd size='24px' /></span>Nuevo Pedido</button>
+        <button className='btn-add-order' onClick={navigateToCreateOrder}><IoIosAdd size='22px' />Nuevo Pedido</button>
     </div>
   )
 }
