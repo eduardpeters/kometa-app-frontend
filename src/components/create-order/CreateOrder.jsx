@@ -95,15 +95,6 @@ const CreateOrder = () => {
                                         setCoordinates={setOrigin}
                                         placeholder="Introducir punto de recogida"
                                     />
-                                    <input
-                                        className="input"
-                                        value={origin}
-                                        onChange={(e) => setOrigin(e.target.value)}
-                                        type="text"
-                                        required
-                                        placeholder="Introducir punto de entrega"
-                                        style={{zIndex: 2}}
-                                    />
                                 </div>
 
                                 <div>
@@ -113,16 +104,7 @@ const CreateOrder = () => {
                                         setCoordinates={setDestination}
                                         placeholder="Introducir punto de entrega"
                                     />
-                                    <input
-                                        className="input"
-                                        value={destination}
-                                        onChange={(e) => setDestination(e.target.value)}
-                                        type="text"
-                                        required
-                                        placeholder="Introducir punto de recogida"
-                                    />
                                 </div>
-
                                 <div>
                                     <h3 className="title-input">Archivos</h3>
                                     <div className="file-section">
