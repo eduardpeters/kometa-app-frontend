@@ -18,7 +18,7 @@ const CardActiveOrders = (props) => {
       <InfoCardOrigin />
       <InfoCardDestination />
       <BtnInDeliveryStatus />
-      <Link to={`/order/${props.order.orderUUID}`}><IoArrowForward size='24px' color='#4062FF'/></Link>
+      <Link to={`/order/${props.order.orderUUID}`} state={"any type"}><IoArrowForward size='24px' color='#4062FF'/></Link>
     </div>
   )
 }
