@@ -3,7 +3,7 @@
     height: 44px;
 
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     align-items: center;
     padding: 4px 32px;
     gap: 16px;
@@ -28,24 +28,33 @@
     font-weight: 500;
 }
 
+.orders-navbar-deliveryMan{
+    padding-left: 0.5rem;
+}
+
 .orders-navbar-order-number{
-    padding-left: 2.6rem;
+    padding-left: 5rem;
+    width: 120px;
 }
 
 .orders-navbar-price{
-    padding-left: 2rem;
+    padding-left: 1rem;
+}
+
+.orders-navbar-packet{
+    padding-right: 6rem;
 }
 
 .orders-navbar-destination{
-    padding-left: 1.4rem;
+    padding-right: 8rem;
 }
 
 .orders-navbar-status{
-    padding-right: 9rem;
+    padding-right: 8rem;
 }
 
 .orders-navbar-origin{
-    padding-right: 13rem;
+    padding-right: 10rem;
 }
 
 .bg-component-order{
