@@ -23,6 +23,7 @@ const GeocoderInput = props => {
         });
         // Set event handler to store coordinates of the user selection
         geocoder.current.on("result", (result) => {
+            props.setAddress(result.result.place_name);
             props.setCoordinates(result.result.center);
         });
          // Add the geocoder to a container
