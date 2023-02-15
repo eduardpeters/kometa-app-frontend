@@ -12,7 +12,7 @@ import BtnEstimatedHour from '../buttons/btns-status/BtnEstimatedHour';
 import PopupCancelOrder from '../popup-cancel-order/PopupCancelOrder';
 import BtnCancelOrder from '../buttons/BtnCancelOrder';
 import BtnInDeliveryStatus from '../buttons/btns-status/BtnInDeliveryStatus.jsx';
-import Navbar from "../navbar/Navbar.jsx";
+import NavbarDeliver from "../navbar/NavbarDeliver.jsx";
 import Search from "../search/Search.jsx";
 import SelectorUser from "../selector-user/SelectorUser.jsx";
 import PopupFinish from '../popup-finish/PopupFinish';
@@ -30,7 +30,7 @@ const DeliverDeliveryDetails = () => {
 
     return (
         <div>
-            <Navbar />
+            <NavbarDeliver />
             <SelectorUser />
             <Search />
             <div className='delivery-details-bg'>

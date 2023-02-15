@@ -2,6 +2,7 @@ import React from 'react'
 import CardActiveOrders from './CardActiveOrders'
 import ManyOrdersNavbar from './ManyOrdersNavbar'
 import '../../assets/styles/orders.css'
+import PopupUploadFile from '../create-order/PopupUploadFile'
 
 const ManyOrders = (props) => {
   return (

@@ -14,6 +14,7 @@ import BtnFinish from "../buttons/BtnFinish";
 import BtnBack from "../buttons/BtnBack";
 import { useUserContext } from "../../context/UserContext";
 import ordersAPI from "../../services/ordersAPI";
+import PopupUploadFile from "./PopupUploadFile";
 
 const CreateOrder = () => {
   const [description, setDescription] = useState("");
@@ -26,6 +27,7 @@ const CreateOrder = () => {
   const [cvc, setCvc] = useState("");
   const [limitDate, setLimitDate] = useState("");
   const [layer, setLayer] = useState(true);
+  const [popup, setPopup] = useState(false);
 
   const navigate = useNavigate();
   const userContext = useUserContext();
@@ -71,7 +73,7 @@ const CreateOrder = () => {
                 <MdOutlineClose onClick={navigateToOrder} size="24px" />
               </div>
               <div className="files">
-                <BtnUpload />
+                <BtnUpload popup={popup} setPopup={setPopup}/>
               </div>
 
               <div className="inputs">
@@ -217,6 +219,7 @@ const CreateOrder = () => {
             </>
           )}
         </div>
+        {popup ? <PopupUploadFile popup={popup} setPopup={setPopup} /> : null}
       </div>
     </div>
   );
