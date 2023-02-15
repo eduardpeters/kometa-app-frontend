@@ -1,0 +1,118 @@
+.bg-popup-upload {
+    position: absolute;
+    width: 100vw;
+    height: 900px;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 220px;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  width: 600px;
+  height: 320px;
+  background-color: #ffffff;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  
+}
+
+.drop-box {
+  margin: 10px 0;
+  padding: 30px;
+  display: flex;
+  width: 500px;
+  align-items: center;
+  flex-direction: column;
+  border: 3px dotted #a3a3a3;
+  border-radius: 5px;
+}
+
+.drop-box h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2e2e2e;
+}
+
+.drop-box p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #a3a3a3;
+}
+
+.btn-box-confirm{
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 115px;
+    height: 40px;
+    background-color: #4062FF;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn:hover{
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #4062FF;
+  border: none;
+  outline: 1px solid #4062FF;
+}
+
+.form input {
+  margin: 10px 0;
+  width: 100%;
+  background-color: #e2e2e2;
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+.btns-popup-upload {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 240px;
+}
+
+.btn-upload-popup {
+    width: 115px;
+    height: 40px;
+    background-color: white;
+    border-radius: 8px;
+    border: 0.5px solid #949494;
+    color: #949494;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-upload-popup:hover{
+    border: 0.5px solid #4062FF;
+    color: #4062FF;
+}

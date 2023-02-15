@@ -1,29 +1,26 @@
+import React from 'react'
 import "../../assets/styles/delivery-details.css";
 import SmallCard3Items from '../small-cards/SmallCard3Items';
-import SmallCardDeliveryMan from '../small-cards/SmallCardDeliveryMan.jsx';
 import SmallCardPrice from '../small-cards/SmallCardPrice';
 import map from "../../assets/Images/map2.png"
 import { MdOutlineClose } from "react-icons/md";
 import { MdOutlineCall } from "react-icons/md";
 import { MdOutlineChatBubbleOutline } from "react-icons/md";
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import BtnEstimatedHour from '../buttons/btns-status/BtnEstimatedHour';
 import PopupCancelOrder from '../popup-cancel-order/PopupCancelOrder';
 import BtnCancelOrder from '../buttons/BtnCancelOrder';
 import BtnInDeliveryStatus from '../buttons/btns-status/BtnInDeliveryStatus.jsx';
-import Navbar from "../navbar/Navbar.jsx";
+import NavbarDeliver from "../navbar/NavbarDeliver.jsx";
 import Search from "../search/Search.jsx";
 import SelectorUser from "../selector-user/SelectorUser.jsx";
 import PopupFinish from '../popup-finish/PopupFinish';
+import SmallCardUser from '../small-cards/SmallCardUser';
 
-const DeliveryDetails = () => {
+const DeliverDeliveryDetails = () => {
 
     const [popup, setPopup] = useState(false);
-
-    const location = useLocation()
-    const order = location.state
-    console.log(order)
 
     const navigate = useNavigate();
 
@@ -33,27 +30,27 @@ const DeliveryDetails = () => {
 
     return (
         <div>
-            <Navbar />
+            <NavbarDeliver />
             <SelectorUser />
             <Search />
             <div className='delivery-details-bg'>
                 <div className='left-container-delivery-details'>
                     <div>
                         <h1 className='title-delivery-details'>Detalles del Pedido</h1>
-                        <h3 className='delivery-number'>#{order.orderUUID}</h3>
+                        <h3 className='delivery-number'>#HYONU789UJ</h3>
                         <BtnInDeliveryStatus />
                     </div>
                     <div className='title-box-delivery-details'>
-                        <h1 className='subtitle-delivery-details'>Repartidor</h1>
-                        <SmallCardDeliveryMan />
+                        <h1 className='subtitle-delivery-details'>Cliente</h1>
+                        <SmallCardUser />
                     </div>
                     <div className='title-box-delivery-details2'>
                         <h1 className='subtitle-delivery-details'>Detalles de Entrega</h1>
-                        <SmallCard3Items order={order}/>
+                        <SmallCard3Items />
                     </div>
                     <div className='title-box-delivery-details2'>
                         <h1 className='subtitle-delivery-details'>Precio Total</h1>
-                        <SmallCardPrice order={order}/>
+                        <SmallCardPrice />
                     </div>
                 </div>
 
@@ -76,4 +73,4 @@ const DeliveryDetails = () => {
     )
 }
 
-export default DeliveryDetails
+export default DeliverDeliveryDetails

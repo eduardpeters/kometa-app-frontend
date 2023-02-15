@@ -6,13 +6,13 @@ const BtnConfirm = () => {
 
     const navigate = useNavigate();
 
-    const navigateToNoOrder = () => {
-        navigate('/no-order');
+    const navigateToOrder = () => {
+        navigate('/order');
     };
 
     return (
         <div className='btn-box-confirm'>
-            <button className='btn-confirm' onClick={navigateToNoOrder}>Confirmar</button>
+            <button className='btn-confirm' onClick={navigateToOrder}>Confirmar</button>
         </div>
     )
 }
