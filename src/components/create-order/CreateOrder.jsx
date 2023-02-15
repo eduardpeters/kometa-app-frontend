@@ -20,7 +20,9 @@ import PopupUploadFile from "./PopupUploadFile";
 const CreateOrder = () => {
   const [description, setDescription] = useState("");
   const [origin, setOrigin] = useState([]);
+  const [originAddress, setOriginAddress] = useState("");
   const [destination, setDestination] = useState([]);
+  const [destinationAddress, setDestinationAddress] = useState("");
   const [weight, setWeight] = useState("");
   const [units, setUnits] = useState("");
   const [ownerCard, setOwnerCard] = useState("");
@@ -44,8 +46,10 @@ const CreateOrder = () => {
       orderCharge: weight * units,
       originLongitude: origin[0],
       originLatitude: origin[1],
+      originAddress: originAddress,
       destinationLongitude: destination[0],
       destinationLatitude: destination[1],
+      destinationAddress: destinationAddress,
       description: description
     };
     console.log(userContext)
@@ -95,6 +99,7 @@ const CreateOrder = () => {
                   <GeocoderInput
                     reference="origin"
                     setCoordinates={setOrigin}
+                    setAddress={setOriginAddress}
                     placeholder="Introducir punto de recogida"
                   />
                 </div>
@@ -104,6 +109,7 @@ const CreateOrder = () => {
                   <GeocoderInput
                     reference="destination"
                     setCoordinates={setDestination}
+                    setAddress={setDestinationAddress}
                     placeholder="Introducir punto de entrega"
                   />
                 </div>
