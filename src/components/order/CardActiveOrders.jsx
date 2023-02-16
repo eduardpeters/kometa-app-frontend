@@ -17,8 +17,8 @@ const CardActiveOrders = (props) => {
       <div className='details-order'>#{props.order.orderUUID.substring(0,10)}...</div>
       <div className='details-order'>{props.order.orderCharge}€</div>
       <InfoCardPacket description={props.order.description}/>
-      <InfoCardOrigin latitude={props.order.originLatitude} longitude={props.order.originLongitude}/>
-      <InfoCardDestination latitude={props.order.destinationLatitude} longitude={props.order.destinationLongitude}/>
+      <InfoCardOrigin address={props.order.originAddress.substring(0,20)}/>
+      <InfoCardDestination address={props.order.destinationAddress.substring(0,20)}/>
       <BtnInDeliveryStatus />
       <Link to={`/order/${props.order.orderUUID}`} state={props.order}><IoArrowForward size='24px' color='#4062FF'/></Link>
     </div>
