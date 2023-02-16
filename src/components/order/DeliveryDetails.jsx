@@ -11,11 +11,11 @@ import { useState } from 'react';
 import BtnEstimatedHour from '../buttons/btns-status/BtnEstimatedHour';
 import PopupCancelOrder from '../popup-cancel-order/PopupCancelOrder';
 import BtnCancelOrder from '../buttons/BtnCancelOrder';
-import BtnInDeliveryStatus from '../buttons/btns-status/BtnInDeliveryStatus.jsx';
 import Navbar from "../navbar/Navbar.jsx";
 import Search from "../search/Search.jsx";
 import SelectorUser from "../selector-user/SelectorUser.jsx";
 import PopupFinish from '../popup-finish/PopupFinish';
+import BtnStatus from "../buttons/btns-status/BtnStatus";
 
 const DeliveryDetails = () => {
 
@@ -41,7 +41,7 @@ const DeliveryDetails = () => {
                     <div>
                         <h1 className='title-delivery-details'>Detalles del Pedido</h1>
                         <h3 className='delivery-number'>#{order.orderUUID}</h3>
-                        <BtnInDeliveryStatus />
+                        <BtnStatus status={order.orderStatus}/>
                     </div>
                     <div className='title-box-delivery-details'>
                         <h1 className='subtitle-delivery-details'>Repartidor</h1>

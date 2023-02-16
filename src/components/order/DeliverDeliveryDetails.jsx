@@ -11,12 +11,12 @@ import { useState } from 'react';
 import BtnEstimatedHour from '../buttons/btns-status/BtnEstimatedHour';
 import PopupCancelOrder from '../popup-cancel-order/PopupCancelOrder';
 import BtnCancelOrder from '../buttons/BtnCancelOrder';
-import BtnInDeliveryStatus from '../buttons/btns-status/BtnInDeliveryStatus.jsx';
 import NavbarDeliver from "../navbar/NavbarDeliver.jsx";
 import Search from "../search/Search.jsx";
 import SelectorUser from "../selector-user/SelectorUser.jsx";
 import PopupFinish from '../popup-finish/PopupFinish';
 import SmallCardUser from '../small-cards/SmallCardUser';
+import BtnStatus from '../buttons/btns-status/BtnStatus';
 
 const DeliverDeliveryDetails = () => {
 
@@ -38,7 +38,7 @@ const DeliverDeliveryDetails = () => {
                     <div>
                         <h1 className='title-delivery-details'>Detalles del Pedido</h1>
                         <h3 className='delivery-number'>#HYONU789UJ</h3>
-                        <BtnInDeliveryStatus />
+                        <BtnStatus status={order.orderStatus}/>
                     </div>
                     <div className='title-box-delivery-details'>
                         <h1 className='subtitle-delivery-details'>Cliente</h1>

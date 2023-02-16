@@ -1,13 +1,11 @@
-import React from 'react'
 import '../../assets/styles/orders.css'
-import BtnInDeliveryStatus from '../buttons/btns-status/BtnInDeliveryStatus'
-import BtnCompletedStatus from '../buttons/btns-status/BtnCompletedStatus'
 import InfoCardDestination from '../info-cards/InfoCardDestination'
 import InfoCardOrigin from '../info-cards/InfoCardOrigin'
 import InfoDeliveryMan from '../info-cards/InfoDeliveryMan'
 import { IoArrowForward } from "react-icons/io5";
 import { Link } from 'react-router-dom'
 import InfoCardPacket from '../info-cards/InfoCardPacket'
+import BtnStatus from '../buttons/btns-status/BtnStatus'
 
 const CardActiveOrders = (props) => {
 
@@ -19,7 +17,7 @@ const CardActiveOrders = (props) => {
       <InfoCardPacket description={props.order.description}/>
       <InfoCardOrigin address={props.order.originAddress.substring(0,20)}/>
       <InfoCardDestination address={props.order.destinationAddress.substring(0,20)}/>
-      <BtnInDeliveryStatus />
+      <BtnStatus status={props.order.orderStatus}/>
       <Link to={`/order/${props.order.orderUUID}`} state={props.order}><IoArrowForward size='24px' color='#4062FF'/></Link>
     </div>
   )
