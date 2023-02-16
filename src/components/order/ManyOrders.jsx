@@ -8,7 +8,7 @@ const ManyOrders = (props) => {
   return (
     <div className='bg-orders'>
         <ManyOrdersNavbar />
-        {props.orders.map(order => <CardActiveOrders order={order}/>)}
+        {props.orders.map(order => <CardActiveOrders key={order.orderUUID} order={order}/>)}
     </div>
   )
 }

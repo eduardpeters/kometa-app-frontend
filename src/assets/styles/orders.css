@@ -6,7 +6,6 @@
     grid-template-columns: repeat(7, 1fr);
     align-items: center;
     padding: 4px 32px;
-    gap: 16px;
 
     background: #FFFFFF;
     border-radius: 16px;
@@ -28,33 +27,38 @@
     font-weight: 500;
 }
 
+.title-navbar-orders2{
+    font-size: 14px;
+    font-weight: 500;
+    width: 120px;
+}
+
 .orders-navbar-deliveryMan{
     padding-left: 0.5rem;
 }
 
 .orders-navbar-order-number{
-    padding-left: 5rem;
-    width: 120px;
+    padding-left: 2.2rem;
 }
 
 .orders-navbar-price{
-    padding-left: 1rem;
+    padding-left: 1.5rem;
 }
 
 .orders-navbar-packet{
-    padding-right: 6rem;
+    padding-left: 0rem;
 }
 
 .orders-navbar-destination{
-    padding-right: 8rem;
+    padding-left: 1rem;
 }
 
 .orders-navbar-status{
-    padding-right: 8rem;
+    padding-left: -2rem;
 }
 
 .orders-navbar-origin{
-    padding-right: 10rem;
+    padding-right: 11rem;
 }
 
 .bg-component-order{
