@@ -31,7 +31,7 @@ const HistoryUser = () => {
             <Search />
             <div className='bg-history'>
                 <HistoryNavbarUser />
-                {orders.map(orders => <CardHistoryUser key={orders.orderUUID} orders={orders}/>)}
+                {orders.map(order => <CardHistoryUser key={order.orderUUID} order={order}/>)}
             </div>
         </div>
     )

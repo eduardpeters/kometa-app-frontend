@@ -12,13 +12,13 @@ const CardHistoryUser = (props) => {
   return (
     <div className='bg-component-history'>
       <InfoDeliveryMan />
-      <div className='details-history'>#{props.orders.orderUUID.substring(0,10)}...</div>
-      <div className='details-history'>{props.orders.orderCharge}€</div>
-      <InfoCardPacket description={props.orders.description}/>
-      <InfoCardOrigin address={props.orders.originAddress.substring(0,20)}/>
-      <InfoCardDestination address={props.orders.destinationAddress.substring(0,20)}/>
-      <BtnStatus status={props.orders.orderStatus}/>
-      <Link to={`/order/${props.orders.orderUUID}`} state={props.orders}><IoArrowForward size='24px' color='#4062FF'/></Link>
+      <div className='details-history'>#{props.order.orderUUID.substring(0,10)}...</div>
+      <div className='details-history'>{props.order.orderCharge}€</div>
+      <InfoCardPacket description={props.order.description}/>
+      <InfoCardOrigin address={props.order.originAddress.substring(0,20)}/>
+      <InfoCardDestination address={props.order.destinationAddress.substring(0,20)}/>
+      <BtnStatus status={props.order.orderStatus}/>
+      <Link to={`/order/${props.order.orderUUID}`} state={props.order}><IoArrowForward size='24px' color='#4062FF'/></Link>
     </div>
   )
 }
