@@ -9,6 +9,9 @@ import RegisterUser from "./register-user/RegisterUser";
 import RegisterWork from "./register-work/RegisterWork";
 import DeliveryDetails from "./order/DeliveryDetails";
 import { UserContextProvider } from "../context/UserContext";
+import { useUserContext } from "../context/UserContext";
+import { useEffect, useState } from "react";
+import ordersAPI from "../services/ordersAPI";
 
 function App() {
 

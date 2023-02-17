@@ -16,7 +16,7 @@ const Order = () => {
     
     useEffect(() => {
         const getOrders = async(token) => {
-           const response = await ordersAPI.getOrders(token);
+           const response = await ordersAPI.getOrders(token, ['Pending', 'Delivering']);
            console.log(response);
            setOrders(response)
         }
