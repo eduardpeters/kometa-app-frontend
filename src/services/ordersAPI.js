@@ -2,8 +2,15 @@ import axios from "axios";
 
 class ordersAPI {
 
-    static async getOrders(token) {
-        const requestUrl = `${process.env.REACT_APP_BASE_URL}orders`;
+    static async getOrders(token, status) {
+        let requestUrl = `${process.env.REACT_APP_BASE_URL}orders`;
+        if (status){
+            requestUrl = requestUrl.concat('/?');
+            status.forEach(queryStatus => {
+                requestUrl = requestUrl.concat('status=',queryStatus,'&');
+            });
+            requestUrl = requestUrl.substring(0,requestUrl.length-1);
+        }
         const config = {
             headers:{
                 Authorization: `Bearer ${token}`

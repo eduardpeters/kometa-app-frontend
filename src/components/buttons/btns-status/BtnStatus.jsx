@@ -8,7 +8,7 @@ const BtnStatus = (props) => {
     if (props.status === "Pending"){
       buttonClass = 'btn-pending';
       buttonText = 'Pendiente';
-    } else if (props.status === "Delivery"){
+    } else if (props.status === "Delivering"){
       buttonClass = 'btn-in-delivery';
       buttonText = 'En reparto';
     } else if (props.status === "Cancelled"){
