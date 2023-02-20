@@ -16,6 +16,7 @@ import Search from "../search/Search.jsx";
 import SelectorUser from "../selector-user/SelectorUser.jsx";
 import PopupFinish from '../popup-finish/PopupFinish';
 import BtnStatus from "../buttons/btns-status/BtnStatus";
+import Map from "../map/Map";
 
 const DeliveryDetails = () => {
 
@@ -41,7 +42,7 @@ const DeliveryDetails = () => {
                     <div>
                         <h1 className='title-delivery-details'>Detalles del Pedido</h1>
                         <h3 className='delivery-number'>#{order.orderUUID}</h3>
-                        <BtnStatus status={order.orderStatus}/>
+                        <BtnStatus status={order.orderStatus} />
                     </div>
                     <div className='title-box-delivery-details'>
                         <h1 className='subtitle-delivery-details'>Repartidor</h1>
@@ -49,11 +50,11 @@ const DeliveryDetails = () => {
                     </div>
                     <div className='title-box-delivery-details2'>
                         <h1 className='subtitle-delivery-details'>Detalles de Entrega</h1>
-                        <SmallCard3Items order={order}/>
+                        <SmallCard3Items order={order} />
                     </div>
                     <div className='title-box-delivery-details2'>
                         <h1 className='subtitle-delivery-details'>Precio Total</h1>
-                        <SmallCardPrice order={order}/>
+                        <SmallCardPrice order={order} />
                     </div>
                 </div>
 
@@ -65,9 +66,7 @@ const DeliveryDetails = () => {
                         <MdOutlineCall size='24px' color='#4062FF' />
                         <MdOutlineClose onClick={navigateToOrder} size='24px' color='#4062FF' />
                     </div>
-                    <div className='img-bg-map' style={{ backgroundImage: `url(${map})` }}>
-                        <BtnEstimatedHour />
-                    </div>
+                    <Map />
                 </div>
             </div>
             {popup ? <PopupCancelOrder popup={popup} setPopup={setPopup} /> : null}
