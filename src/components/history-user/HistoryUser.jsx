@@ -6,23 +6,29 @@ import HistoryNavbarUser from './HistoryNavbarUser'
 import { useUserContext } from '../../context/UserContext'
 import { useState, useEffect } from 'react'
 import ordersAPI from '../../services/ordersAPI'
-
+import useLocalToken from "../../hooks/useLocalToken";
 
 const HistoryUser = () => {
     
     const[orders, setOrders] = useState([]);
-
     const userContext = useUserContext();
-    
+    const token = useLocalToken();
+
     useEffect(() => {
         const getOrders = async(token) => {
            const response = await ordersAPI.getOrders(token);
            console.log(response);
            setOrders(response)
         }
-        console.log(userContext);
-        getOrders(userContext.token);
-    }, [])
+        if (!userContext.token) {
+            if (!token) {
+                return ;
+            }
+            userContext.setToken(token);
+        } else {
+            getOrders(userContext.token);
+        } 
+    }, [userContext.token]);
 
     return (
         <div>
