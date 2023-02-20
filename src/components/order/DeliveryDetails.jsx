@@ -66,7 +66,7 @@ const DeliveryDetails = () => {
                         <MdOutlineCall size='24px' color='#4062FF' />
                         <MdOutlineClose onClick={navigateToOrder} size='24px' color='#4062FF' />
                     </div>
-                    <Map />
+                    <Map origin={[order.originLongitude, order.originLatitude]} destination={[order.destinationLongitude, order.destinationLatitude]} />
                 </div>
             </div>
             {popup ? <PopupCancelOrder popup={popup} setPopup={setPopup} /> : null}

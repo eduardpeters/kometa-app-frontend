@@ -1,15 +1,16 @@
 import React, { useRef, useEffect, useState } from "react";
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
+import "mapbox-gl/dist/mapbox-gl.css";
 import "../../assets/styles/map.css";
 
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_KEY;
 
-const Map = () => {
+const Map = (props) => {
     const map = useRef(null);
     const mapContainer = useRef(null);
     const [lng, setLng] = useState(-3.7);
     const [lat, setLat] = useState(40.42);
-    const [zoom, setZoom] = useState(12);
+    const [zoom, setZoom] = useState(11);
 
     useEffect(() => {
         if (map.current) {
@@ -26,6 +27,12 @@ const Map = () => {
             setLat(map.current.getCenter().lat.toFixed(4));
             setZoom(map.current.getZoom().toFixed(2));
         });
+        const originMarker = new mapboxgl.Marker()
+            .setLngLat(props.origin)
+            .addTo(map.current);
+        const destionationMarker = new mapboxgl.Marker()
+            .setLngLat(props.destination)
+            .addTo(map.current);
     },[]);
 
     return (
