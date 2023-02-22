@@ -1,9 +1,11 @@
 import '../../assets/styles/popup-upload-file.css'
-import { useRef } from 'react';
+import { useRef, useState} from 'react';
 import { useNavigate } from 'react-router-dom';
-import PaPa from 'papaparse';
+import Papa from 'papaparse';
 
 const PopupUploadFile = (props) => {
+
+    const[arrayData, setArrayData] = useState([]);
 
     const navigate = useNavigate();
     const file = useRef();
@@ -18,9 +20,9 @@ const PopupUploadFile = (props) => {
     const parseFile = file => {
         const config = {
             header: true,
-            complete: (results,file)=> console.log(results, file)
+            complete: (results,file)=> {return (setArrayData(results), console.log(results, file), console.log(arrayData))}
         }
-        PaPa.parse(file, config);
+        Papa.parse(file, config);
     };
 
     return (
