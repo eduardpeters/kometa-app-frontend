@@ -8,7 +8,7 @@ const GeocoderInput = props => {
 
     useEffect(() => {
         if (geocoder.current) {
-            return ;
+            return;
         }
         geocoder.current = new MapboxGeocoder({
             // Initialize the geocoder
@@ -26,9 +26,12 @@ const GeocoderInput = props => {
             props.setAddress(result.result.place_name);
             props.setCoordinates(result.result.center);
         });
-         // Add the geocoder to a container
-         const containerID = `#geocoder-container-${props.reference}`;
-         geocoder.current.addTo(containerID);
+        // Add the geocoder to a container
+        const containerID = `#geocoder-container-${props.reference}`;
+        geocoder.current.addTo(containerID);
+        console.log(geocoder.current);
+        // Set class to remove clashing styling class from Map css
+        geocoder.current.container.className = "mapboxgl-ctrl-geocoder";
     }, []);
 
     return (
