@@ -5,18 +5,13 @@ class ordersAPI {
     static async getOrders(token, status) {
         let requestUrl = `${process.env.REACT_APP_BASE_URL}orders`;
         if (status){
-            requestUrl = requestUrl.concat('/?');
-            status.forEach(queryStatus => {
-                requestUrl = requestUrl.concat('status=',queryStatus,'&');
-            });
-            requestUrl = requestUrl.substring(0,requestUrl.length-1);
+            requestUrl = requestUrl.concat('/?status=', status.join('&status='));
         }
         const config = {
             headers:{
                 Authorization: `Bearer ${token}`
             }
         }
-
         console.log("Send to backend!", requestUrl, config);
         try {
             const response = await axios.get(requestUrl, config);
