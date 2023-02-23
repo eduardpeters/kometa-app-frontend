@@ -29,7 +29,6 @@ const GeocoderInput = props => {
         // Add the geocoder to a container
         const containerID = `#geocoder-container-${props.reference}`;
         geocoder.current.addTo(containerID);
-        console.log(geocoder.current);
         // Set class to remove clashing styling class from Map css
         geocoder.current.container.className = "mapboxgl-ctrl-geocoder";
     }, []);
