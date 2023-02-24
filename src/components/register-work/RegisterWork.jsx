@@ -1,13 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import registerAPI from "../../services/registerAPI";
+import { Link, useNavigate } from 'react-router-dom';
 import NavLogin from '../nav-login/NavLogin';
 import image from '../../assets/Images/repartidorlogin.png'
 import '../../assets/styles/register-work.css'
 
-
 function RegisterWork() {
-
 
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
@@ -20,8 +19,17 @@ function RegisterWork() {
     const [confirmPassword, setConfirmPassword] = useState("");
     const [storeToken, setStoreToken] = useState(false);
 
+    const navigate = useNavigate();
+
     async function handleLoginSubmit(event) {
         event.preventDefault();
+        const response = await registerAPI.postRegister(firstName, lastName, birthdate, nationalID, email, phone, password, 'delivery');
+        if (response.error) {
+            console.error(response.error);
+        } else {
+            console.log(response);
+            navigate('/login');
+        }
     }
 
     return (

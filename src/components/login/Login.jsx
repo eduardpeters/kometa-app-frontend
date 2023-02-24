@@ -32,7 +32,13 @@ function Login() {
             if (storeToken) {
                 localStorage.setItem('kometaToken', response.token);
             }
+            if (response.userRole == 'client'){
             navigate('/order');
+            }
+            else if (response.userRole == 'delivery'){
+                navigate('/order-delivery');
+            }
+
         }
     }
 

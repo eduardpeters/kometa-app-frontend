@@ -13,6 +13,7 @@ const Navbar = () => {
   };
 
   const navigateToLanding = () => {
+    localStorage.removeItem('kometaToken');
     navigate('/');
 };
 
