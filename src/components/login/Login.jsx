@@ -28,9 +28,12 @@ function Login() {
             userContext.setUserUUID(response.userUUID);
             userContext.setToken(response.token);
             userContext.setRole(response.userRole);
-            navigate('/order')
+            console.log("Store token in localStorage?", storeToken);
+            if (storeToken) {
+                localStorage.setItem('kometaToken', response.token);
+            }
+            navigate('/order');
         }
-        console.log("Store token in localStorage?", storeToken);
     }
 
     return (
