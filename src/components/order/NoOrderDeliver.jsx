@@ -1,19 +1,45 @@
 import React from 'react'
 import "../../assets/styles/new-delivery.css";
 import image from "../../assets/Images/empty.png";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import PopupDelivery from '../popup-delivery/PopupDelivery';
+import { useUserContext } from '../../context/UserContext'
+import useLocalToken from "../../hooks/useLocalToken";
+import ordersAPI from '../../services/ordersAPI';
+import usersAPI from '../../services/usersAPI'
 
 const NoOrderDeliver = () => {
 
-    const [toggle, setToggle] = useState(false)
+    const [toggle, setToggle] = useState(false);
+    const [isAvailable, setIsAvailable] = useState(false);
+    const userContext = useUserContext();
+    const token = useLocalToken();
 
-    const showPopup = () => {
-        setTimeout(() => {
+    useEffect(() => {
+        const getOrders = async(token) => {
+           const response = await ordersAPI.getOrders(token, ['Delivering']);
+           console.log(response);
+        }
+        if (!userContext.token) {
+            if (!token) {
+                return ;
+            }
+            userContext.setToken(token);
+        } else {
+            if(isAvailable){
+            getOrders(userContext.token);
             setToggle(true);
-        }, 3000);
+            }
+        }
+        console.log('Availability', isAvailable)
+    }, [isAvailable, userContext.token]);
 
+    const updateAvailability = async() => {
+        setIsAvailable(!isAvailable);
+        const response = await usersAPI.updateAvailability(userContext.token, !isAvailable);
+        console.log(response);
     }
+
 
     return (
         <>
@@ -25,8 +51,8 @@ const NoOrderDeliver = () => {
                     <p className='p-crete-delivery'>Márcate como disponible y empieza a recibir pedidos.</p>
                 </div>
                 <div className='available'>Disponible
-                    <label class="switch" onClick={() => showPopup()}>
-                        <input type="checkbox" />
+                    <label class="switch">
+                        <input type="checkbox" onClick={() => updateAvailability()}/>
                         <span class="slider round"></span>
                     </label>
                 </div>

@@ -6,7 +6,7 @@ import map from "../../assets/Images/map2.png"
 import { MdOutlineClose } from "react-icons/md";
 import { MdOutlineCall } from "react-icons/md";
 import { MdOutlineChatBubbleOutline } from "react-icons/md";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 import { useState } from 'react';
 import BtnEstimatedHour from '../buttons/btns-status/BtnEstimatedHour';
 import PopupCancelOrder from '../popup-cancel-order/PopupCancelOrder';
@@ -18,7 +18,7 @@ import PopupFinish from '../popup-finish/PopupFinish';
 import SmallCardUser from '../small-cards/SmallCardUser';
 import BtnStatus from '../buttons/btns-status/BtnStatus';
 
-const DeliverDeliveryDetails = () => {
+const DeliverDeliveryDetails = (props) => {
 
     const [popup, setPopup] = useState(false);
 
@@ -30,15 +30,12 @@ const DeliverDeliveryDetails = () => {
 
     return (
         <div>
-            <NavbarDeliver />
-            <SelectorUser />
-            <Search />
             <div className='delivery-details-bg'>
                 <div className='left-container-delivery-details'>
                     <div>
                         <h1 className='title-delivery-details'>Detalles del Pedido</h1>
-                        <h3 className='delivery-number'>#HYONU789UJ</h3>
-                        <BtnStatus status={order.orderStatus}/>
+                        <h3 className='delivery-number'>#{props.order.orderUUID}</h3>
+                        <BtnStatus status={props.order.orderStatus}/>
                     </div>
                     <div className='title-box-delivery-details'>
                         <h1 className='subtitle-delivery-details'>Cliente</h1>
@@ -46,11 +43,11 @@ const DeliverDeliveryDetails = () => {
                     </div>
                     <div className='title-box-delivery-details2'>
                         <h1 className='subtitle-delivery-details'>Detalles de Entrega</h1>
-                        <SmallCard3Items />
+                        <SmallCard3Items order={props.order}/>
                     </div>
                     <div className='title-box-delivery-details2'>
                         <h1 className='subtitle-delivery-details'>Precio Total</h1>
-                        <SmallCardPrice />
+                        <SmallCardPrice order={props.order}/>
                     </div>
                 </div>
 

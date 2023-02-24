@@ -12,6 +12,8 @@ import { UserContextProvider } from "../context/UserContext";
 import { useUserContext } from "../context/UserContext";
 import { useEffect, useState } from "react";
 import ordersAPI from "../services/ordersAPI";
+import OrderDelivery from "./order/OrderDelivery";
+import DeliverDeliveryDetails from "./order/DeliverDeliveryDetails";
 
 function App() {
 
@@ -28,6 +30,8 @@ function App() {
                         <Route path="/history-user" element={<HistoryUser />} />
                         <Route path="/register-work" element={<RegisterWork />}></Route>
                         <Route path="/order/:id" element={<DeliveryDetails />}></Route>
+                        <Route path="/order-delivery" element={<OrderDelivery />}></Route>
+                        <Route path="/delivery-details" element={<DeliverDeliveryDetails />}></Route>
                     </Routes>
                 </Router>
             </UserContextProvider>
