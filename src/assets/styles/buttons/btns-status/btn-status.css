@@ -1,0 +1,44 @@
+.btn-cancelled{
+    width: 100px;
+    height: 32px;
+    background-color: #C23934;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.btn-in-delivery{
+    width: 100px;
+    height: 32px;
+    background-color: #DA8E49;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.btn-completed{
+    width: 100px;
+    height: 32px;
+    background-color: #04844B;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.btn-pending{
+    width: 100px;
+    height: 32px;
+    background-color: #a42e00;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+}
+

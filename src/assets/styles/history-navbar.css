@@ -3,10 +3,9 @@
     height: 44px;
 
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     align-items: center;
     padding: 4px 32px;
-    gap: 16px;
 
     background: #FFFFFF;
     border-radius: 16px;
@@ -28,22 +27,36 @@
     font-weight: 500;
 }
 
+.title-navbar-h2{
+    font-size: 14px;
+    font-weight: 500;
+    width: 120px;
+}
+
+.h-navbar-deliveryMan{
+    padding-left: 0.5rem;
+}
+
 .h-navbar-order-number{
-    padding-left: 3.5rem;
+    padding-left: 2.2rem;
 }
 
 .h-navbar-price{
-    padding-left: 2.5rem;
+    padding-left: 1.5rem;
+}
+
+.h-navbar-packet{
+    padding-left: 0rem;
 }
 
 .h-navbar-destination{
-    padding-left: 7rem;
+    padding-left: 1rem;
 }
 
 .h-navbar-status{
-    padding-left: 5.5rem;
+    padding-left: -2rem;
 }
 
 .h-navbar-origin{
-    padding-left: 1rem;
+    padding-right: 11rem;
 }

@@ -9,8 +9,13 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const navigateToHome = () => {
-      navigate('/no-order');
+      navigate('/order');
   };
+
+  const navigateToLanding = () => {
+    localStorage.removeItem('kometaToken');
+    navigate('/');
+};
 
   return (
     <div className='navbar'>
@@ -18,7 +23,7 @@ const Navbar = () => {
         <img className='logo-navbar' onClick={navigateToHome} src={logo} alt="Logo" />
       </div>
       <div className='right-navbar'>
-        <h5 className='btn-logout'>Cerrar Sesión</h5>
+        <h5 className='btn-logout' onClick={navigateToLanding}>Cerrar Sesión</h5>
         <img className='user-picture' src={user} alt="user" />
       </div>
     </div>

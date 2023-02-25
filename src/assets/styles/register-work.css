@@ -1,0 +1,175 @@
+.register-work {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: white;
+}
+
+.register-work-image-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.register-work-image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    height: 130vh;
+}
+
+.register-work-content {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+    background: white;
+    }
+
+.register-work-navbar {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0px
+}
+
+.register-work-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formwork-register-title{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0px;
+}
+
+.title-work-register {
+    font-size: 32px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.subtitle-work-register {
+    font-size: 15px;
+    font-weight: 10;
+    color: #D1D1D1;
+}
+
+.register-work-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.register-work-field {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.btn-work-register {
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: #4062FF;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    width: 380px;
+    margin-left: 65px;
+    text-align: center;
+    border: none;
+    margin-top: -5px;
+    margin-bottom: -5PX;
+}
+
+
+
+.register-work-input {
+    width: 500px;
+    height: 40px;
+    border: 1px solid #d1d1d180;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #081020;
+    padding-left: 16px;
+    margin-bottom: -10px;
+
+}
+
+.titlework-register-input {
+    font-size: 14px;
+    font-weight: 600;
+    color: #393939;
+    margin: 1rem 0;
+    line-height: 5px;
+}
+
+.checkwork-register-container {
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+}
+
+.checkbox-work-register {
+    margin-right: 8px;
+}
+
+.btn-work-register:hover {
+    background-color: #4062FF;
+    color: white;
+}
+
+.slider-work-register {
+    font-size: 13.5px;
+    margin-top: 10px;
+}
+
+.boxwork-register-user {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.textwork-link-register {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: 100;
+    font-size: 13.5px;
+}
+
+@media screen and (max-width:768px) {
+    section {
+        padding: 10px;
+    }
+
+    .register-work-image-container {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .register-work-form {
+        width: 100%;
+        padding: 25px;
+        background: #ffffffe6;
+    }
+}

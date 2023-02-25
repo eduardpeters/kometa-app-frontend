@@ -1,0 +1,30 @@
+.textdesing {
+    font-size: 50px;
+}
+
+.subTextdesing {
+    font-size: 20px;
+    font-weight: 100;
+    padding-right: 100px;
+    text-align: left;
+    line-height: 25px;
+}
+
+.button-login2 {
+    color: white;
+    font-weight: 500;
+    background-color: #4062FF;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    border: none;
+    width: 150px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.color-word {
+    color: #4062FF;
+}

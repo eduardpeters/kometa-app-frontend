@@ -1,23 +1,17 @@
 .login {
     width: 100vw;
     height: 100vh;
-}
-
-.conteiner1 {
-    background: white;
-    width: 100%;
-    height: 100%;
     display: flex;
-
+    background: white;
 }
 
-.conteinerImg1 {
+.login-image-container {
     position: relative;
     width: 50%;
     height: 100%;
 }
 
-.conteinerImg1 img {
+.login-image-container img {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,33 +20,62 @@
     object-fit: cover;
 }
 
-.conteinerContent1 {
-    position: relative;
-    display: flex;
-    width: 50%;
-    height: 50%;
-    align-items: center;
-    flex-direction: column;
-}
-
-.conteinerForm1 {
+.login-content {
     width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
-
-.inputs span {
-    font-size: 1em;
-    display: inline;
-    font-weight: 300;
-    letter-spacing: 1px;
+.login-navbar {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
 }
 
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-.btn-sesion{
+.form-title {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0px;
+}
+
+.title-log-in {
+    font-size: 32px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.subtitle-login {
+    font-size: 15px;
+    font-weight: 10;
+    color: #D1D1D1;
+}
+
+.login-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-field {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.btn-login {
     margin-top: 10px;
     color: white;
     font-weight: 600;
@@ -62,102 +85,18 @@
     padding-top: 12px;
     padding-bottom: 12px;
     border-radius: 8px;
-    width:380px;
+    width: 380px;
     margin-left: 65px;
     text-align: center;
     border: none;
 }
 
-.btn-sesion:hover{
-    background-color: #4062FF;
-    color: white;
-}
-
-.w-33 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .center1 {
-    line-height: 50px;
-  }
-
-.slider{
-    font-size: 13.5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
 
-
-  
-@media screen and (max-width:768px){
-    section {
-        padding: 10px;
-    }
-    .conteinerImg1 {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        height: 100%;
-    }
-    .conteinerContent1{
-        width: 100%;
-        height: 100%;
-        z-index: 3;
-    }
-    .conteinerForm1 {
-        width: 100%;
-        padding: 25px;
-        background: rgba(255, 255, 255, .9);
-    }
-}
-
-.title-login{
-    font-size: 20px;
-    font-weight: 500;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-
-.title-log-in{
-    font-size:32px;
-    font-weight: 500;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-
-.subtitle-login{
-    font-size: 15px;
-    font-weight: 10;
-    color: #D1D1D1;   
-}
-
-.init-title{
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 0px;
-    position: relative;
-    top: 40px;
-}
-
-.link-register{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.input{
+.input {
     width: 500px;
     height: 40px;
-    border: 1px solid rgb(209, 209, 209, 0.5);
+    border: 1px solid #d1d1d180;
     border-radius: 4px;
     font-size: 14px;
     color: #081020;
@@ -165,51 +104,65 @@
     margin-bottom: 15px;
 }
 
-.title-input{
+.title-input {
     font-size: 14px;
     font-weight: 600;
-    color: rgb(57, 57, 57);
+    color: #393939;
+    margin: 1rem 0;
 }
 
-.inputs{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 500px;
-}
-
-.btn-box{
+.check-container {
     display: flex;
     justify-content: center;
+    line-height: 50px;
 }
 
-.swtich-container{
-    display: flex;
-    justify-content: center;
-}
-
-.checkbox{
+.checkbox {
     margin-right: 8px;
 }
 
-.navBarUno {
-    width: 50vw;
-    display: flex;
-    justify-content: flex-end;
+.btn-login:hover {
+    background-color: #4062FF;
+    color: white;
 }
 
-.navBarUno img {
-    margin-right: 30px;
+.checkbox-text {
+    font-size: 13.5px;
 }
 
-.subtitle-log-in{
-    font-size: 15px;
-    font-weight: 500;
-}
-
-.box-log-in{
+.box-register {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.text-link {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: 100;
+    font-size: 13.5px;
+}
+
+@media only  screen and (max-width:768px) 
+and
+(max-width:1024px) 
+{
+    section {
+        padding: 10px;
+    }
+
+    .login-image-container {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .login-form {
+        width: 100%;
+        padding: 25px;
+        background: #ffffffe6;
+    }
 }

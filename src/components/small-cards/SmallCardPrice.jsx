@@ -2,10 +2,10 @@ import React from 'react'
 import "../../assets/styles/small-card/small-card.css";
 import InfoCardPrice from '../info-cards/InfoCardPrice';
 
-const SmallCardPrice = () => {
+const SmallCardPrice = (props) => {
     return (
         <div className='small-card'>
-            <InfoCardPrice />
+            <InfoCardPrice price={props.order.orderCharge}/>
         </div>
     )
 }

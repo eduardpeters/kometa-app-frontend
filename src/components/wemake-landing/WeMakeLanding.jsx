@@ -2,6 +2,7 @@ import React from "react";
 import movil from '../../assets/Images/mobile_app.png'
 import TakeAway from '../../assets/Images/TakeAway.png'
 import world from '../../assets/Images/world.png'
+import '../../assets/styles/we-make-landing.css'
 
 function WeMakeLanding() {
 
@@ -9,7 +10,7 @@ function WeMakeLanding() {
         <>
             <div className='contain-wemake'>
                 <div className='title-wemake'>
-                    <h7 className='subtitle-wemake' style={{ color: '#4062FF' }} >¿QUE HACEMOS?</h7>
+                    <h6 className='subtitle-wemake'>¿QUE HACEMOS?</h6>
                     <h1 className='subtitle-wemake2'>Tus repartidores de</h1>
                     <h1 className='subtitle-wemake2'>Confianza</h1>
 
@@ -46,8 +47,10 @@ function WeMakeLanding() {
                             <img className='icon-wemake' width='227' src={world} alt="" />
                         </div>
                         <div className='description'>
-                            <h2>Eco Friendly</h2>
-                            <h5 className='text-wemake3'>Nos preocupamos por le medio ambiente, nuestros repartidores irán en bicicletas o motos eléctricas.</h5>
+                            <div className='text-wemake'>
+                                <h2>Eco Friendly</h2>
+                                </div>
+                                <h5 className='text-wemake3'>Nos preocupamos por le medio ambiente, nuestros repartidores irán en bicicletas o motos eléctricas.</h5>
                         </div>
                     </div>
                 </div>

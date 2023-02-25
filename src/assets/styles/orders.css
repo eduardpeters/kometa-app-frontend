@@ -1,0 +1,83 @@
+.orders-navbar-user {
+    width: 1216px;
+    height: 44px;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    padding: 4px 32px;
+
+    background: #FFFFFF;
+    border-radius: 16px;
+
+}
+
+.bg-orders{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 220px;
+    left: 80px;
+}
+
+.title-navbar-orders{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.title-navbar-orders2{
+    font-size: 14px;
+    font-weight: 500;
+    width: 120px;
+}
+
+.orders-navbar-deliveryMan{
+    padding-left: 0.5rem;
+}
+
+.orders-navbar-order-number{
+    padding-left: 2.2rem;
+}
+
+.orders-navbar-price{
+    padding-left: 1.5rem;
+}
+
+.orders-navbar-packet{
+    padding-left: 0rem;
+}
+
+.orders-navbar-destination{
+    padding-left: 1rem;
+}
+
+.orders-navbar-status{
+    padding-left: -2rem;
+}
+
+.orders-navbar-origin{
+    padding-right: 11rem;
+}
+
+.bg-component-order{
+    width: 1216px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 32px;
+    gap: 16px;
+
+    background: #FFFFFF;
+    border-radius: 16px;
+
+    margin-top: 8px;
+}
+
+.details-order{
+    color: gray;
+}

@@ -2,6 +2,7 @@ import "../../assets/styles/selector-user.css";
 import { Link } from 'react-router-dom';
 
 import React from 'react'
+import BtnAddOrder from "../buttons/BtnAddOrder";
 
 const SelectorUser = () => {
 
@@ -9,6 +10,7 @@ const SelectorUser = () => {
         <div className="selector-completed">
             <Link className='selector-name' to="/order">Mi pedido</Link>
             <Link className='selector-name' to="/history-user">Historial</Link>
+            <BtnAddOrder />
         </div>
     )
 }

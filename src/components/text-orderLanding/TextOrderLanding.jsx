@@ -1,25 +1,18 @@
 import React from "react";
-import '../../assets/styles/LandingPage.css'
-import { useNavigate } from "react-router";
+import '../../assets/styles/text-order-landing.css'
+import { Link } from "react-router-dom";
 
 function TextOrderLanding() {
 
-    const navigate = useNavigate();
-
-    const navigateToLogin = () => {
-        navigate('/login');
-      };
-
-    return(
+    return (
         <>
-        <div>
-            <h1 className='textdesing' style={{ color: 'Black'}}>Tus pedidos en las mejores manos</h1>
-            <h7 className='subTextdesing'> Recibe tu pedido sin moverte de tu casa, aprovecha el tiempo y nosotros nos ocupamos del resto</h7>
-            <br></br>
-            <button onClick={navigateToLogin} className='button-login2'>Empezar</button>
-
-            {/* <h5 className='textdesing' style={{ color: '#4062FF' }}>manos</h5> */}
-        </div>
+            <div>
+                <h1 className='textdesing'>Tus pedidos en las mejores <span className="color-word">manos</span></h1>
+                <h6 className='subTextdesing'> Recibe tu pedido sin moverte de tu casa, aprovecha el tiempo y nosotros nos ocupamos del resto</h6>
+                <br></br>
+                <Link to='/login'><button className='button-login2'>Empezar</button>
+                </Link>
+            </div>
         </>
     )
 }
