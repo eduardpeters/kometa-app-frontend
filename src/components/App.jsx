@@ -14,6 +14,7 @@ import { useEffect, useState } from "react";
 import ordersAPI from "../services/ordersAPI";
 import OrderDelivery from "./order/OrderDelivery";
 import DeliverDeliveryDetails from "./order/DeliverDeliveryDetails";
+import HistoryDelivery from "./history-user/HistoryDelivery";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
                         <Route path="/order" element={<Order />} />
                         <Route path="/create-order" element={<CreateOrder />} />
                         <Route path="/history-user" element={<HistoryUser />} />
+                        <Route path="/history-delivery" element={<HistoryDelivery />} />
                         <Route path="/register-work" element={<RegisterWork />}></Route>
                         <Route path="/order/:id" element={<DeliveryDetails />}></Route>
                         <Route path="/order-delivery" element={<OrderDelivery />}></Route>

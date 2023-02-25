@@ -1,4 +1,4 @@
-.btn-cancel-order {
+.btn-complete-order {
     font-weight: 600;
     background-color: #f3f5ff;
     padding-left: 16px;
@@ -12,7 +12,7 @@
     cursor: pointer;
 }
 
-.btn-cancel-order:hover {
+.btn-complete-order:hover {
     font-weight: 600;
     background-color: #4062FF;
     padding-left: 16px;

@@ -59,40 +59,18 @@
     align-items: flex-end;
 }
 
-.btn-cancel-order {
-
-    font-weight: 600;
-    background-color: #f3f5ff;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    color: #4062FF;
-    border-radius: 8px;
-    border: none;
-    font-size: 12px;
-    cursor: pointer;
-}
-
-.btn-cancel-order:hover {
-
-    font-weight: 600;
-    background-color: #4062FF;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    color: white;
-    border-radius: 8px;
-    border: none;
-    font-size: 12px;
-    cursor: pointer;
-}
-
 .buttons-delivery-details {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 280px;
+}
+
+.buttons-deliver-delivery-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
 }

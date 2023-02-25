@@ -3,7 +3,7 @@ import { useState } from 'react';
 import registerAPI from "../../services/registerAPI";
 import { Link, useNavigate } from 'react-router-dom';
 import NavLogin from '../nav-login/NavLogin';
-import image from '../../assets/Images/repartidorlogin.png'
+import image from '../../assets/Images/delivery.jpg'
 import '../../assets/styles/register-work.css'
 
 function RegisterWork() {
