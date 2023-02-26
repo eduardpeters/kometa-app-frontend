@@ -36,7 +36,7 @@ const OrderDelivery = () => {
             <NavbarDeliver />
             <SelectorDelivery />
             <Search />
-            {order?.clientUUID ? <DeliverDeliveryDetails order={order}/> : <NoOrderDeliver />}
+            {order?.clientUUID ? <DeliverDeliveryDetails order={order}/> : <NoOrderDeliver setOrder={setOrder} />}
         </>
     )
 }
