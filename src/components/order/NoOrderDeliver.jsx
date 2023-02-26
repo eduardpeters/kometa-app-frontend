@@ -51,9 +51,9 @@ const NoOrderDeliver = () => {
                     <p className='p-crete-delivery'>Márcate como disponible y empieza a recibir pedidos.</p>
                 </div>
                 <div className='available'>Disponible
-                    <label class="switch">
+                    <label className="switch">
                         <input type="checkbox" onClick={() => updateAvailability()}/>
-                        <span class="slider round"></span>
+                        <span className="slider round"></span>
                     </label>
                 </div>
             </div>
