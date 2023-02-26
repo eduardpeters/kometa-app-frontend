@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
 import "mapbox-gl/dist/mapbox-gl.css";
 import "../../assets/styles/map.css";
+import mapboxAPI from "../../services/mapboxAPI";
 
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_KEY;
 
@@ -67,13 +68,8 @@ const Map = (props) => {
 
     async function traceRoute(originCoordinates, destinationCoordinates) {
         console.log("Trace my route", originCoordinates, destinationCoordinates);
-        const response = await fetch(
-            `https://api.mapbox.com/directions/v5/mapbox/cycling/${originCoordinates[0]},${originCoordinates[1]};${destinationCoordinates[0]},${destinationCoordinates[1]}?steps=true&geometries=geojson&access_token=${mapboxgl.accessToken}`,
-            { method: 'GET' }
-        );
-        const jsonResponse = await response.json();
-        console.log(jsonResponse);
-        const responseData = jsonResponse.routes[0];
+        const response = await mapboxAPI.getRoute(originCoordinates, destinationCoordinates, mapboxgl.accessToken); 
+        const responseData = response.routes[0];
         const routeCoordinates = responseData.geometry.coordinates;
         const geojson = {
             type: 'Feature',
