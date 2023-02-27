@@ -2,7 +2,6 @@ import React from 'react'
 import "../../assets/styles/delivery-details.css";
 import SmallCard3Items from '../small-cards/SmallCard3Items';
 import SmallCardPrice from '../small-cards/SmallCardPrice';
-import map from "../../assets/Images/map2.png"
 import { MdOutlineClose } from "react-icons/md";
 import { MdOutlineCall } from "react-icons/md";
 import { MdOutlineChatBubbleOutline } from "react-icons/md";
@@ -15,6 +14,7 @@ import SmallCardUser from '../small-cards/SmallCardUser';
 import BtnStatus from '../buttons/btns-status/BtnStatus';
 import BtnCompleteOrder from '../buttons/BtnCompleteOrder';
 import PopupCancelOrderDelivery from '../popup-cancel-order/PopupCancelOrderDelivery';
+import MapDirections from '../map-directions/MapDirections';
 
 const DeliverDeliveryDetails = (props) => {
 
@@ -59,9 +59,10 @@ const DeliverDeliveryDetails = (props) => {
                         <MdOutlineCall size='24px' color='#4062FF' />
                         <MdOutlineClose onClick={navigateToOrder} size='24px' color='#4062FF' />
                     </div>
-                    <div className='img-bg-map' style={{ backgroundImage: `url(${map})` }}>
-                        <BtnEstimatedHour />
-                    </div>
+                    <MapDirections
+                        origin={[props.order.originLongitude, props.order.originLatitude]}
+                        destination={[props.order.destinationLongitude, props.order.destinationLatitude]}
+                    />
                 </div>
             </div>
             {popupCancel ? <PopupCancelOrderDelivery popup={popupCancel} setPopup={setPopupCancel} /> : null}
@@ -70,4 +71,4 @@ const DeliverDeliveryDetails = (props) => {
     )
 }
 
-export default DeliverDeliveryDetails
+export default DeliverDeliveryDetails;
