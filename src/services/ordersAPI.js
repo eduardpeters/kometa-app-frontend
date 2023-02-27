@@ -4,11 +4,11 @@ class ordersAPI {
 
     static async getOrders(token, status) {
         let requestUrl = `${process.env.REACT_APP_BASE_URL}orders`;
-        if (status){
+        if (status) {
             requestUrl = requestUrl.concat('/?status=', status.join('&status='));
         }
         const config = {
-            headers:{
+            headers: {
                 Authorization: `Bearer ${token}`
             }
         }
@@ -17,16 +17,38 @@ class ordersAPI {
             const response = await axios.get(requestUrl, config);
             return response.data;
         }
-        catch (error) {  
+        catch (error) {
             console.error(error);
             return error.response.data;
         }
     }
 
+
+    static async patchOrder(token, orderStatus, orderUUID) {
+        const requestUrl = `${process.env.REACT_APP_BASE_URL}orders/${orderUUID}`;
+        const patchBody = {orderStatus: orderStatus};
+        const config = {
+            headers: {
+                Authorization: `Bearer ${token}`
+            }
+        }
+        console.log("Send to backend!", requestUrl, patchBody, config);
+        try {
+            const response = await axios.patch(requestUrl, patchBody, config);
+            return response.data;
+        }
+        catch (error) {
+            console.error(error);
+            return error.response.data;
+        }
+    }
+
+
+
     static async postOrder(token, orderDetails) {
         const requestUrl = `${process.env.REACT_APP_BASE_URL}orders`;
         const config = {
-            headers:{
+            headers: {
                 Authorization: `Bearer ${token}`
             }
         }
@@ -35,13 +57,13 @@ class ordersAPI {
             const response = await axios.post(requestUrl, orderDetails, config);
             return response.data;
         }
-        catch (error) {  
+        catch (error) {
             console.error(error);
             return error.response.data;
         }
-       
+
     }
-    
+
 }
 
 export default ordersAPI;
