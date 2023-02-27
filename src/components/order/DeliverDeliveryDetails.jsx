@@ -66,7 +66,7 @@ const DeliverDeliveryDetails = (props) => {
                 </div>
             </div>
             {popupCancel ? <PopupCancelOrderDelivery popup={popupCancel} setPopup={setPopupCancel} /> : null}
-            {popupComplete ? <PopupCompleteOrder popup={popupComplete} setPopup={setPopupComplete}/> :  null}
+            {popupComplete ? <PopupCompleteOrder orderUUID={props.order.orderUUID} setOrder={props.setOrder} popup={popupComplete} setPopup={setPopupComplete}/> :  null}
         </div>
     )
 }
