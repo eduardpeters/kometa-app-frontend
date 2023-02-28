@@ -2,25 +2,24 @@ import React from 'react'
 import "../../assets/styles/delivery-details.css";
 import SmallCard3Items from '../small-cards/SmallCard3Items';
 import SmallCardPrice from '../small-cards/SmallCardPrice';
-import map from "../../assets/Images/map2.png"
 import { MdOutlineClose } from "react-icons/md";
 import { MdOutlineCall } from "react-icons/md";
 import { MdOutlineChatBubbleOutline } from "react-icons/md";
 import { useNavigate} from 'react-router-dom';
 import { useState } from 'react';
 import BtnEstimatedHour from '../buttons/btns-status/BtnEstimatedHour';
-import PopupCancelOrder from '../popup-cancel-order/PopupCancelOrder';
+import PopupCompleteOrder from '../popup-complete-order/PopupCompleteOrder';
 import BtnCancelOrder from '../buttons/BtnCancelOrder';
-import NavbarDeliver from "../navbar/NavbarDeliver.jsx";
-import Search from "../search/Search.jsx";
-import SelectorUser from "../selector-user/SelectorUser.jsx";
-import PopupFinish from '../popup-finish/PopupFinish';
 import SmallCardUser from '../small-cards/SmallCardUser';
 import BtnStatus from '../buttons/btns-status/BtnStatus';
+import BtnCompleteOrder from '../buttons/BtnCompleteOrder';
+import PopupCancelOrderDelivery from '../popup-cancel-order/PopupCancelOrderDelivery';
+import MapDirections from '../map-directions/MapDirections';
 
 const DeliverDeliveryDetails = (props) => {
 
-    const [popup, setPopup] = useState(false);
+    const [popupCancel, setPopupCancel] = useState(false);
+    const [popupComplete, setPopupComplete] = useState(false);
 
     const navigate = useNavigate();
 
@@ -53,21 +52,23 @@ const DeliverDeliveryDetails = (props) => {
 
 
                 <div className='right-container-delivery-details'>
-                    <div className='buttons-delivery-details'>
-                        <BtnCancelOrder popup={popup} setPopup={setPopup} />
+                    <div className='buttons-deliver-delivery-details'>
+                        <BtnCompleteOrder popup={popupComplete} setPopup={setPopupComplete}/>
+                        <BtnCancelOrder popup={popupCancel} setPopup={setPopupCancel} />
                         <MdOutlineChatBubbleOutline size='24px' color='#4062FF' />
                         <MdOutlineCall size='24px' color='#4062FF' />
                         <MdOutlineClose onClick={navigateToOrder} size='24px' color='#4062FF' />
                     </div>
-                    <div className='img-bg-map' style={{ backgroundImage: `url(${map})` }}>
-                        <BtnEstimatedHour />
-                    </div>
+                    <MapDirections
+                        origin={[props.order.originLongitude, props.order.originLatitude]}
+                        destination={[props.order.destinationLongitude, props.order.destinationLatitude]}
+                    />
                 </div>
             </div>
-            {popup ? <PopupCancelOrder popup={popup} setPopup={setPopup} /> : null}
-            {/* <PopupFinish /> */}
+            {popupCancel ? <PopupCancelOrderDelivery popup={popupCancel} setPopup={setPopupCancel} /> : null}
+            {popupComplete ? <PopupCompleteOrder orderUUID={props.order.orderUUID} setOrder={props.setOrder} popup={popupComplete} setPopup={setPopupComplete}/> :  null}
         </div>
     )
 }
 
-export default DeliverDeliveryDetails
+export default DeliverDeliveryDetails;

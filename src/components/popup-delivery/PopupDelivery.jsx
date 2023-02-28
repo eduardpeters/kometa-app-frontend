@@ -9,16 +9,16 @@ const PopupDelivery = (props) => {
     return (
         <div className='bg-popup-delivery'>
             <div className='popup-delivery'>
-                <img className='illustration-delivery' src={delivery} alt='delivery-illustration'/>
+                <img className='illustration-delivery' src={delivery} alt='delivery-illustration' />
                 <h1 className='title-popup-delivery'>¡Pedido Nuevo!</h1>
                 <SmallCardDelivery />
                 <div className='btns-popup-delivery'>
                     <button className='btn-delivery-popup' onClick={() => props.setToggle(false)}>Cancelar</button>
-                    <BtnAccept />
+                    <BtnAccept setToggle={props.setToggle} order={props.order} setOrder={props.setOrder} />
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default PopupDelivery
+export default PopupDelivery;

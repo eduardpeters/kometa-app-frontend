@@ -9,7 +9,7 @@ const NavbarDeliver = () => {
   const navigate = useNavigate();
 
   const navigateToHome = () => {
-      navigate('/order');
+      navigate('/order-delivery');
   };
 
   const navigateToLanding = () => {
