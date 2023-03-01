@@ -27,7 +27,6 @@ function RegisterWork() {
         if (response.error) {
             console.error(response.error);
         } else {
-            console.log(response);
             navigate('/login');
         }
     }
@@ -62,7 +61,7 @@ function RegisterWork() {
                         </div>
                         <div className="register-work-field">
                             <label htmlFor="birthdate" className='titlework-register-input'>Fecha de nacimiento</label>
-                            <input className='register-work-input' value={birthdate} onChange={(e) => setBirthdate(e.target.value)} type="text" required placeholder='AAAA-MM-DD' id="email" />
+                            <input className='register-work-input' value={birthdate} onChange={(e) => setBirthdate(e.target.value)} type="date" required placeholder='AAAA-MM-DD' id="date" />
                         </div>
                         <div className="register-field">
                             <label htmlFor="Phone" className='title-register-input'>DNI / NIE</label>

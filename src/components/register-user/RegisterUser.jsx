@@ -29,7 +29,6 @@ function RegisterUser() {
         if (response.error) {
             console.error(response.error);
         } else {
-            console.log(response);
             navigate('/login');
         }
     }
@@ -64,7 +63,7 @@ function RegisterUser() {
                         </div>
                         <div className="register-field">
                             <label htmlFor="birthdate" className='title-register-input'>Fecha de Nacimiento</label>
-                            <input className='register-input' value={birthdate} onChange={(e) => setBirthdate(e.target.value)} type="text" required placeholder='AAAA/MM/DD' id="birthdate" />
+                            <input className='register-input' value={birthdate} onChange={(e) => setBirthdate(e.target.value)} type="date" required placeholder='AAAA/MM/DD' id="birthdate" />
                         </div>
                         <div className="register-field">
                             <label htmlFor="Phone" className='title-register-input'>DNI / NIE</label>

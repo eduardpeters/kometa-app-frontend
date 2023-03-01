@@ -17,7 +17,6 @@ const HistoryDelivery = () => {
     useEffect(() => {
         const getOrders = async(token) => {
            const response = await ordersAPI.getOrders(token);
-           console.log(response);
            setOrders(response)
         }
         if (!userContext.token) {

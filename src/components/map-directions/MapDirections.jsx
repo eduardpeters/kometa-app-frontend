@@ -67,7 +67,6 @@ const Map = (props) => {
     }
 
     async function traceRoute(originCoordinates, destinationCoordinates) {
-        console.log("Trace my route", originCoordinates, destinationCoordinates);
         const response = await mapboxAPI.getRoute(originCoordinates, destinationCoordinates, mapboxgl.accessToken); 
         const responseData = response.routes[0];
         const routeCoordinates = responseData.geometry.coordinates;

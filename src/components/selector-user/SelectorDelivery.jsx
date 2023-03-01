@@ -6,7 +6,7 @@ import React from 'react'
 const SelectorDelivery = () => {
 
     return (
-        <div className="selector-completed">
+        <div className="selector-completed-delivery">
             <Link className='selector-name' to="/order-delivery">Mi pedido</Link>
             <Link className='selector-name' to="/history-delivery">Historial</Link>
         </div>

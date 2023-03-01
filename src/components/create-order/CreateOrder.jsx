@@ -61,9 +61,7 @@ const CreateOrder = () => {
             destinationAddress: destinationAddress,
             description: description
         };
-        console.log(userContext)
         const response = await ordersAPI.postOrder(userContext.token, orderDetails);
-        console.log(response);
         if (response.error) {
             console.error(response.error);
         } else {

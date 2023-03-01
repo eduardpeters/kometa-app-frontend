@@ -10,7 +10,6 @@ class usersAPI {
                 Authorization: `Bearer ${token}`
             }
         }
-        console.log("Send to backend!", requestUrl, config);
         try {
             const response = await axios.patch(requestUrl,{},config);
             return response.data;

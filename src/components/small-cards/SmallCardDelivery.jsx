@@ -2,10 +2,10 @@ import React from 'react'
 import "../../assets/styles/small-card/small-card-delivery.css";
 import InfoCardDelivery from '../info-cards/InfoCardDelivery';
 
-const SmallCardDelivery = () => {
+const SmallCardDelivery = (props) => {
     return (
         <div className='small-card'>
-            <InfoCardDelivery />
+            <InfoCardDelivery order={props.order}/>
         </div>
     )
 }

@@ -32,7 +32,7 @@
     letter-spacing: 5px;
     color: #4062FF;
     font-size: medium;
-    font-weight: 50;
+    font-weight: 600;
 }
 
 .button-work{
@@ -56,9 +56,10 @@
 }
 
 .second-subtitle{
-    font-size: 18px;
-    font-weight: 100;
+    font-size: 16px;
+    font-weight: 500;
     padding-right: 100px;
     text-align: left;
     line-height: 25px;
+    color: rgb(148, 148, 148);
 }

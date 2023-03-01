@@ -3,11 +3,21 @@
 }
 
 .term-Cond {
-    font-size: xx-small;
     color: gray;
     margin-right: 30px;
     margin-left: 30px;
-    line-height: 1%;
+    line-height: 16px;
+    width: 440px;
+    font-size: 12px;
+}
+
+.option-footer{
+    color: gray;
+    margin-right: 30px;
+    margin-left: 30px;
+    line-height: 18px;
+    font-size: 12px;
+    text-align: right;
 }
 
 .redes-Kometa {
@@ -19,16 +29,17 @@
 .conteiner-Footer {
     margin-bottom: 10px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-
 }
 
 .conteinerFooter-left {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin-left: 70px;
-
+    height: 120px;
 }
 
 .containerFooter-Right {

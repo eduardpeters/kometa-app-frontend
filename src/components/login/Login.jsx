@@ -6,7 +6,6 @@ import '../../assets/styles/login.css'
 import image from '../../assets/Images/repartidorlogin.png'
 import NavLogin from "../../components/nav-login/NavLogin.jsx";
 import { useUserContext } from "../../context/UserContext";
-// import Googlebtn from '../components/Googlebtn'
 
 function Login() {
 
@@ -24,18 +23,16 @@ function Login() {
         if (response.error) {
             console.error(response.error);
         } else {
-            console.log(`You are a ${response.userRole} with UUID: ${response.userUUID}. This is your token: ${response.token}`);
             userContext.setUserUUID(response.userUUID);
             userContext.setToken(response.token);
             userContext.setRole(response.userRole);
-            console.log("Store token in localStorage?", storeToken);
             if (storeToken) {
                 localStorage.setItem('kometaToken', response.token);
             }
-            if (response.userRole == 'client'){
+            if (response.userRole === 'client'){
             navigate('/order');
             }
-            else if (response.userRole == 'delivery'){
+            else if (response.userRole === 'delivery'){
                 navigate('/order-delivery');
             }
 
@@ -72,7 +69,6 @@ function Login() {
                         <button className='btn-login' type="submit">Inicio de sesión</button>
                     </div>
                 </form>
-                {/* <Googlebtn /> */}
                 <div className="box-register">
                     <h4 className='subtitle-log-in' >
                         <Link to="/register" className="text-link">

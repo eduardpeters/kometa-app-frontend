@@ -9,16 +9,16 @@ const UserContextProvider = ({ children }) => {
   const [role, setRole] = useState('');
 
   return (
-    <UserContext.Provider value={{userUUID, token, role, setUserUUID, setToken, setRole}}>
+    <UserContext.Provider value={{ userUUID, token, role, setUserUUID, setToken, setRole }}>
       {children}
     </UserContext.Provider>
   );
 };
 
 const useUserContext = () => {
-    return (
-        useContext(UserContext)
-    )
+  return (
+    useContext(UserContext)
+  )
 };
 
 export { UserContext, UserContextProvider, useUserContext };
