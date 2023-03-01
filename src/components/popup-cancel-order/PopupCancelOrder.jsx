@@ -2,13 +2,20 @@ import React from 'react'
 import '../../assets/styles/popup-cancel-order.css'
 import BtnConfirm from '../buttons/BtnConfirm'
 import { useNavigate } from 'react-router-dom';
+import ordersAPI from '../../services/ordersAPI'
+import { useUserContext } from '../../context/UserContext'
 
 const PopupCancelOrder = (props) => {
 
     const navigate = useNavigate();
+    const userContext = useUserContext();
 
-    const navigateToOrder = () => {
-        navigate('/order');
+    const cancelOrder = async () => {
+        const response = await ordersAPI.patchOrder(userContext.token, 'Cancelled', props.orderUUID);
+        if (response) {
+            props.setPopup(false);
+            navigate('/order');
+        }
     };
 
   return (
@@ -18,7 +25,7 @@ const PopupCancelOrder = (props) => {
         <p className='text-popup-cancel'>Estás seguro que deseas cancelar tu pedido? Perderás el importe del pago</p>
         <div className='btns-popup-cancel'>
           <button className='btn-cancel-popup' onClick={() => props.setPopup(false)}>Cancelar</button>
-          <BtnConfirm onClickAction={() => navigateToOrder()}/>
+          <BtnConfirm onClickAction={() => cancelOrder()}/>
         </div>
       </div>
     </div>
