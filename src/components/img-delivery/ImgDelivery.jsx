@@ -7,7 +7,7 @@ function ImgDelivery() {
 
   return (
     <>
-      <img className='imgUser-repart' width='552' src={userRepartidor} alt="" />
+      <img className='imgUser-repart' width='500' src={userRepartidor} alt="" />
     </>
   )
 }

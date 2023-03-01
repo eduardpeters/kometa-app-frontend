@@ -8,9 +8,9 @@ function StartOrder () {
 
     return (
         <>
-            <div className='start-conteiner'>
+            <div className='start-container'>
                 <div className='start-container-left'>
-                    <div className='startText'>
+                    <div className='start-text'>
                         <h6 className='subtitle-start-work'>REALIZA YA TU PEDIDO</h6>
                         <h1 className='subtitle-start-work2'>¡Empieza hoy con nosotros!</h1>
                         <h6 className="text-start-order">Recibe tu pedido sin moverte de tu casa, aprovecha el tiempo y nosotros nos ocupamos del resto.</h6>
@@ -20,7 +20,7 @@ function StartOrder () {
                     </Link>
                     </div>
                 </div>
-                <div className='startContainer.right'>
+                <div className='start-container-right'>
                     <img className='motoman-startorder' width='600' src={motoman} alt="" />
                 </div>
             </div>

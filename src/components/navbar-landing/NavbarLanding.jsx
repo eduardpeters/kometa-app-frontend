@@ -7,11 +7,11 @@ function NavbarLanding() {
 
     return (
         <>
-            <div className='navbarLanding'>
-                <div className='left-navbarLanding'>
-                    <img className='logo-navbarLanding' height='42' width='157' src={logo} alt="Logo" />
+            <div className='navbar-landing'>
+                <div className='left-navbar-landing'>
+                    <img className='logo-navbar-landing' height='40' width='136' src={logo} alt="Logo" />
                 </div>
-                <div className='right-navbarLanding'>
+                <div className='right-navbar-landing'>
                     <Link to='/login'> <button className="btn-register1">Inicio de Sesión</button></Link>
                     <div>
                         <Link to={'/register'}><button className='btn-register' >Registro</button>

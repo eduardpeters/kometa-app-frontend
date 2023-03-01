@@ -8,7 +8,7 @@ function PlaceOrder() {
 
     return (
         <>
-            <div className='place-Constainer'>
+            <div className='place-Container'>
                 <div className='startContainer-order-left'>
                     <div className='startText2'>
                         <h1 className='subtitle-PlaceOrder'>Somos los más rápidos de todo Madrid</h1>

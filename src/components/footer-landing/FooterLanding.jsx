@@ -9,19 +9,17 @@ function FooterLanding() {
         <>
             <div className='conteiner-Footer'>
                 <div className='conteinerFooter-left'>
-                    <img className='logs-Kometa' src={logo} width='157px' height='42' alt="Logo" />
+                    <img className='logs-Kometa' src={logo} width='120px' height='32' alt="Logo" />
                     <div className='footer-text'>
-                        <h6 className='term-Cond'>Nuestro objetivo es crear una</h6>
-                        <h6 className='term-Cond'>comunidad de clientes satisfechos y</h6>
-                        <h6 className='term-Cond'>mejorar su calidad de vida.</h6>
+                        <p className='term-Cond'>Nuestro objetivo es crear una comunidad de clientes satisfechos y mejorar su calidad de vida.</p>
                     </div>
                     <div className='icons-footer'>
                     </div>
                 </div>
                 <div className='containerFooter-Right'>
-                    <h6 className='term-Cond'>Política de Cookies</h6>
-                    <h6 className='term-Cond'>Privacidad</h6>
-                    <h6 className='term-Cond'>Términos y Condiciones</h6>
+                    <p className='option-footer'>Política de Cookies</p>
+                    <p className='option-footer'>Privacidad</p>
+                    <p className='option-footer'>Términos y Condiciones</p>
                 </div>
             </div>
             <div className='redes-K'>

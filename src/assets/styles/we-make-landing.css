@@ -15,7 +15,7 @@
 .subtitle-wemake{
     letter-spacing: 5px;
     font-size: 12pt;
-    font-weight: 50;
+    font-weight: 600;
     color: #4062FF;}
 
 .subtitle-wemake2{
@@ -51,11 +51,12 @@
 }
 
 .text-wemake3{
-    font-weight: 200;
+    font-weight: 500;
     text-align: center;
     font-size: 15px;
     line-height: 25px;
     margin-top: 5px;
+    color: rgb(148, 148, 148);
 }
 
 .text-wemake2{

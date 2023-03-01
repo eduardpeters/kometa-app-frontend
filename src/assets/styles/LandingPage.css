@@ -1,13 +1,19 @@
-.conteinerBody {
+.container-body {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-bottom: 130px;
     margin-top: 90px;
-    margin-right: 70px;
+    margin-right: 100px;
     margin-left: 60px;
 }
 
-.conteinerOrders {
+.container-orders {
     margin-left: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
 }
 
 @media screen and (max-width:768px) {
@@ -15,11 +21,9 @@
         padding: 10px;
     }
 
-.conteinerText {
+.container-text {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: flexftext-start;
     flex-direction: column;
     font-size: medium;
     margin-left: 60px;
@@ -27,7 +31,7 @@
     margin-bottom: 120px;
 }
 
-.conteinerImg {
-    margin-right: 60px;
+.container-img {
+    margin-right: 30px;
 }
 }

@@ -1,9 +1,9 @@
-.start-conteiner {
+.start-container {
     display: flex;
     justify-content: space-around;
-    width: 90%;
-    height: 500px;
-    margin-left: 75px;
+    width: 88%;
+    height: 480px;
+    margin-left: 100px;
     margin-top: 100px;
     border-radius: 30px;
     background-color: rgba(64, 98, 255, 0.1);
@@ -13,21 +13,25 @@
 .subtitle-start-work {
     letter-spacing: 5px;
     font-size: 12pt;
-    font-weight: 50;
+    font-weight: 600;
     color: #4062FF;
+
 }
 
 .subtitle-start-work2 {
-    font-size: 50px;
-    line-height: 120%;
+    font-size: 44px;
+    margin-bottom: 24px;
+    margin-top: 16px;
 }
 
 .text-start-order{
-    font-size: 18px;
-    font-weight: 100;
+    font-size: 16px;
+    font-weight: 500;
     padding-right: 100px;
     text-align: left;
     line-height: 25px;
+    margin-top: 8px;
+    color: rgb(148, 148, 148);
 }
 
 .button-start-order {
@@ -46,7 +50,6 @@
 
 .start-container-left {
     padding-left: 50px;
-    padding-right: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,4 +59,3 @@
     padding-right: 100px;
     text-align: left;
 }
-

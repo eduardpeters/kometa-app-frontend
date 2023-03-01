@@ -21,28 +21,26 @@ function LandingPage() {
 
     useEffect(() => {
         if (!token) {
-            return ;
+            return;
         }
         userContext.setToken(token);
         navigate('/order');
     }, []);
 
     return (
-        <div className='conteinerLandin'>
-            <div className='conteinerNavbar'>
+        <div className='container-landing'>
+            <div className='container-navbar'>
                 <NavbarLanding />
             </div>
-            <div className='conteinerBody'>
-                <div className='conteinerText'>
-                    <div className='conteinerOrders'>
-                        <TextOrderLanding />
-                    </div>
+            <div className='container-body'>
+                <div className='container-orders'>
+                    <TextOrderLanding />
                 </div>
-                <div className='conteinerImg'>
+                <div className='container-img'>
                     <ImgDelivery />
                 </div>
             </div>
-            <div className='theplace'>
+            <div className='the-place'>
                 <PlaceOrder />
             </div>
             <WeMakeLanding />
