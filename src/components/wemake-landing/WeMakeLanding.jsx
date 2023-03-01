@@ -50,7 +50,7 @@ function WeMakeLanding() {
                             <div className='text-wemake'>
                                 <h2>Eco Friendly</h2>
                                 </div>
-                                <h5 className='text-wemake3'>Nos preocupamos por le medio ambiente, nuestros repartidores irán en bicicletas o motos eléctricas.</h5>
+                                <h5 className='text-wemake3'>Nos preocupamos por el medio ambiente, nuestros repartidores irán en bicicletas o motos eléctricas.</h5>
                         </div>
                     </div>
                 </div>

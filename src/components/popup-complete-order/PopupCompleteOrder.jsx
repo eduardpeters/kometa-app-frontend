@@ -8,12 +8,11 @@ const PopupCompleteOrder = (props) => {
 
     const userContext = useUserContext();
 
-    const completeOrder = async() => {
+    const completeOrder = async () => {
         const response = await ordersAPI.patchOrder(userContext.token, 'Complete', props.orderUUID);
-        console.log(response);
-        if(response){
-        props.setPopup(false);
-        props.setOrder({});
+        if (response) {
+            props.setPopup(false);
+            props.setOrder({});
         }
     };
 

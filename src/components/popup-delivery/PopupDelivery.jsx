@@ -11,7 +11,7 @@ const PopupDelivery = (props) => {
             <div className='popup-delivery'>
                 <img className='illustration-delivery' src={delivery} alt='delivery-illustration' />
                 <h1 className='title-popup-delivery'>¡Pedido Nuevo!</h1>
-                <SmallCardDelivery />
+                <SmallCardDelivery order={props.order}/>
                 <div className='btns-popup-delivery'>
                     <button className='btn-delivery-popup' onClick={() => props.setToggle(false)}>Cancelar</button>
                     <BtnAccept setToggle={props.setToggle} order={props.order} setOrder={props.setOrder} />

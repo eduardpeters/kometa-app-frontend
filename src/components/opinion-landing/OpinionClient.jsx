@@ -18,7 +18,7 @@ function OpinionClient() {
                         <h6 className='h6-opinion'>“Kometa es la mejor plataforma de repartos. Sin duda los repartidores son grandes profesionales y tienen un cuidado especial hacía nuestros pedidos. La rapidez es increíble. Recomiendo Kometa sin dudarlo.”</h6>
                     </div>
                     <div className='start-opinion'>
-                        <img className='imgUser-repart2' width='290' src={start} alt="" />
+                        <img className='imgUser-repart2' width='220' src={start} alt="" />
 
                     </div>
                 </div>

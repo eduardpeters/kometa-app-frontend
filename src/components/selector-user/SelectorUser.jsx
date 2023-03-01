@@ -7,7 +7,7 @@ import BtnAddOrder from "../buttons/BtnAddOrder";
 const SelectorUser = () => {
 
     return (
-        <div className="selector-completed">
+        <div className="selector-completed-user">
             <Link className='selector-name' to="/order">Mi pedido</Link>
             <Link className='selector-name' to="/history-user">Historial</Link>
             <BtnAddOrder />

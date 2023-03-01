@@ -11,9 +11,6 @@ const PopupUploadFile = (props) => {
     const file = useRef();
 
     const handleFileUpload = () => {
-        /* navigate('/create-order'); */
-        console.log(file.current);
-        console.log(file.current.files);
         parseFile(file.current.files[0]);
     };
 
