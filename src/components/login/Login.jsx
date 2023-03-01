@@ -6,7 +6,6 @@ import '../../assets/styles/login.css'
 import image from '../../assets/Images/repartidorlogin.png'
 import NavLogin from "../../components/nav-login/NavLogin.jsx";
 import { useUserContext } from "../../context/UserContext";
-// import Googlebtn from '../components/Googlebtn'
 
 function Login() {
 
@@ -70,7 +69,6 @@ function Login() {
                         <button className='btn-login' type="submit">Inicio de sesión</button>
                     </div>
                 </form>
-                {/* <Googlebtn /> */}
                 <div className="box-register">
                     <h4 className='subtitle-log-in' >
                         <Link to="/register" className="text-link">

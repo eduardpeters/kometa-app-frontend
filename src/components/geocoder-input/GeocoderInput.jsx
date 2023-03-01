@@ -11,25 +11,21 @@ const GeocoderInput = props => {
             return;
         }
         geocoder.current = new MapboxGeocoder({
-            // Initialize the geocoder
-            accessToken: process.env.REACT_APP_MAPBOX_KEY, // Set the access token
+            accessToken: process.env.REACT_APP_MAPBOX_KEY,
             types: "address",
             placeholder: props.placeholder,
-            bbox: [-4.58, 39.88, 3.05, 41.17], // Boundary for Community of Madrid
+            bbox: [-4.58, 39.88, 3.05, 41.17],
             proximity: {
                 longitude: -3.7,
                 latitude: 40.42
-            } // Coordinates of Sol
+            }
         });
-        // Set event handler to store coordinates of the user selection
         geocoder.current.on("result", (result) => {
             props.setAddress(result.result.place_name);
             props.setCoordinates(result.result.center);
         });
-        // Add the geocoder to a container
         const containerID = `#geocoder-container-${props.reference}`;
         geocoder.current.addTo(containerID);
-        // Set class to remove clashing styling class from Map css
         geocoder.current.container.className = "mapboxgl-ctrl-geocoder";
     }, []);
 
