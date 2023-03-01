@@ -29,6 +29,7 @@
     padding-bottom: 12px;
     border-radius: 8px;
     cursor: pointer;
+    width: 88px;
 }
 
 .btn-logout:hover{
@@ -45,7 +46,7 @@
 .right-navbar{
     display: flex;
     flex-direction: row;
-    width: 15%;
     align-items: center;
     justify-content: space-between;
+    width: 200px;
 }
