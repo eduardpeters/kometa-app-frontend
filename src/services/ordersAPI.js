@@ -12,7 +12,6 @@ class ordersAPI {
                 Authorization: `Bearer ${token}`
             }
         }
-        console.log("Send to backend!", requestUrl, config);
         try {
             const response = await axios.get(requestUrl, config);
             return response.data;
@@ -32,7 +31,6 @@ class ordersAPI {
                 Authorization: `Bearer ${token}`
             }
         }
-        console.log("Send to backend!", requestUrl, patchBody, config);
         try {
             const response = await axios.patch(requestUrl, patchBody, config);
             return response.data;
@@ -52,7 +50,6 @@ class ordersAPI {
                 Authorization: `Bearer ${token}`
             }
         }
-        console.log("Send to backend!", requestUrl, config, orderDetails);
         try {
             const response = await axios.post(requestUrl, orderDetails, config);
             return response.data;

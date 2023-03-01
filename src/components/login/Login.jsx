@@ -24,18 +24,16 @@ function Login() {
         if (response.error) {
             console.error(response.error);
         } else {
-            console.log(`You are a ${response.userRole} with UUID: ${response.userUUID}. This is your token: ${response.token}`);
             userContext.setUserUUID(response.userUUID);
             userContext.setToken(response.token);
             userContext.setRole(response.userRole);
-            console.log("Store token in localStorage?", storeToken);
             if (storeToken) {
                 localStorage.setItem('kometaToken', response.token);
             }
-            if (response.userRole == 'client'){
+            if (response.userRole === 'client'){
             navigate('/order');
             }
-            else if (response.userRole == 'delivery'){
+            else if (response.userRole === 'delivery'){
                 navigate('/order-delivery');
             }
 

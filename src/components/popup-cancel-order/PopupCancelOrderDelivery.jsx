@@ -8,7 +8,6 @@ const PopupCancelOrderDelivery = (props) => {
     const navigate = useNavigate();
 
     const navigateToOrderDelivery = () => {
-      console.log("cancel");
         navigate('/order-delivery');
     };
 

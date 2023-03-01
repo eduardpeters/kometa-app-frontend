@@ -25,7 +25,7 @@ function LandingPage() {
         }
         userContext.setToken(token);
         navigate('/order');
-    }, []);
+    }, [token, navigate, userContext]);
 
     return (
         <div className='container-landing'>

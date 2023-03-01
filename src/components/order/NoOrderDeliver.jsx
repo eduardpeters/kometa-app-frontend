@@ -31,15 +31,12 @@ const NoOrderDeliver = (props) => {
                 clearInterval(interval);
             }
         }
-        console.log('Availability', isAvailable);
         return () => clearInterval(interval);
     }, [isAvailable, userContext.token]);
 
 
     const checkForOrders = async (token, interval, setToggle, setNewOrder) => {
-        console.log("Running the interval");
         const response = await ordersAPI.getOrders(token, ['Delivering']);
-        console.log(response);
         if (response[0]) {
             clearInterval(interval);
             setNewOrder(response[0]);
@@ -50,7 +47,6 @@ const NoOrderDeliver = (props) => {
     const updateAvailability = async () => {
         setIsAvailable(!isAvailable);
         const response = await usersAPI.updateAvailability(userContext.token, !isAvailable);
-        console.log(response);
     }
 
     return (

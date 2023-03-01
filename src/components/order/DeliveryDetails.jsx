@@ -24,7 +24,6 @@ const DeliveryDetails = () => {
 
     const location = useLocation()
     const order = location.state
-    console.log(order)
 
     const navigate = useNavigate();
 
